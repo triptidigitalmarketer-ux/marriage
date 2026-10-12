@@ -68,7 +68,7 @@ function Hero() {
 
     const lines = ["Court Marriage", "in Delhi NCR,", "handled properly."];
     return (
-        <section ref={ref} className="bg-ink text-white grain">
+        <section ref={ref} className="text-white grain">
             <div className="container-x relative z-10 grid min-h-[calc(100vh-4rem)] items-center gap-12 pb-20 pt-12 lg:grid-cols-12 lg:pb-24">
                 <div className="lg:col-span-7">
                     <p className="eyebrow text-[var(--amber)]" data-testid="hero-eyebrow">
@@ -170,7 +170,12 @@ function Hero() {
 
 export default function Home() {
     return (
-        <>
+        <div
+            className="home-photo text-white"
+            style={{
+                backgroundImage: `linear-gradient(rgba(11, 25, 44, 0.9), rgba(11, 25, 44, 0.9)), url(${process.env.PUBLIC_URL}/images/mehndi-hands.webp)`,
+            }}
+        >
             <Seo
                 title="Court Marriage in Delhi NCR | Process, Documents & Fees"
                 description="Court marriage and marriage registration across Delhi, Noida, Ghaziabad & NCR — the Special Marriage Act process, documents, notice periods, honest fees, and free consultation by call or WhatsApp."
@@ -184,8 +189,8 @@ export default function Home() {
             {/* USP */}
             <section className="container-x py-20 sm:py-24" data-testid="home-usp-section">
                 <Reveal>
-                    <p className="eyebrow text-[var(--amber-deep)]">Why couples choose us</p>
-                    <h2 className="mt-4 max-w-3xl text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                    <p className="eyebrow text-[var(--amber)]">Why couples choose us</p>
+                    <h2 className="mt-4 max-w-3xl text-3xl font-black tracking-tight text-white sm:text-4xl">
                         Court Marriage Guidance Made Simple Across Delhi NCR
                     </h2>
                 </Reveal>
@@ -208,7 +213,7 @@ export default function Home() {
                         </Reveal>
                     ))}
                     <Reveal delay={0.3}>
-                        <div className="flex h-full flex-col justify-between rounded-md bg-ink p-6 text-white" data-testid="home-usp-cta-card">
+                        <div className="flex h-full flex-col justify-between rounded-md border border-white/20 bg-ink p-6 text-white" data-testid="home-usp-cta-card">
                             <div>
                                 <h3 className="text-lg font-black leading-snug">Ready to start the right way?</h3>
                                 <p className="mt-2 text-[13px] leading-relaxed text-white/70">
@@ -232,11 +237,11 @@ export default function Home() {
             {/* Services bento */}
             <section className="container-x py-20 sm:py-24" data-testid="home-services">
                 <Reveal>
-                    <p className="eyebrow text-[var(--amber-deep)]">What we handle</p>
-                    <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                    <p className="eyebrow text-[var(--amber)]">What we handle</p>
+                    <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-white sm:text-4xl">
                         Two legal routes. One correct file.
                     </h2>
-                    <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-base">
+                    <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/70 sm:text-base">
                         Most confusion comes from mixing up solemnization (creating a marriage
                         under the Special Marriage Act) with registration (certifying one already
                         performed). We work both routes, across the NCR.
@@ -264,11 +269,11 @@ export default function Home() {
             </section>
 
             {/* Process */}
-            <section className="bg-[var(--paper-2)] py-20 sm:py-24" data-testid="home-process">
+            <section className="py-20 sm:py-24" data-testid="home-process">
                 <div className="container-x">
                     <Reveal>
-                        <p className="eyebrow text-[var(--amber-deep)]">The process</p>
-                        <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                        <p className="eyebrow text-[var(--amber)]">The process</p>
+                        <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-white sm:text-4xl">
                             Four steps — and one statutory notice you should know about
                         </h2>
                     </Reveal>
@@ -302,11 +307,11 @@ export default function Home() {
             {/* Religion-wise */}
             <section className="container-x py-20 sm:py-24" data-testid="home-religions">
                 <Reveal>
-                    <p className="eyebrow text-[var(--amber-deep)]">Religion-wise guidance</p>
-                    <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                    <p className="eyebrow text-[var(--amber)]">Religion-wise guidance</p>
+                    <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-white sm:text-4xl">
                         The right procedure depends on your law, not a template
                     </h2>
-                    <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-base">
+                    <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/70 sm:text-base">
                         Different religions follow different marriage laws — and registration is
                         separate from solemnization. Here is the honest position for each
                         situation.
@@ -335,11 +340,11 @@ export default function Home() {
             </section>
 
             {/* Trust — what we do / don't */}
-            <section className="bg-[var(--paper-2)] py-20 text-ink sm:py-24" data-testid="home-trust">
+            <section className="py-20 text-white" data-testid="home-trust">
                 <div className="container-x relative z-10 grid gap-10 md:grid-cols-2">
                     <Reveal>
-                        <p className="eyebrow text-[var(--amber-deep)]">Straight answers</p>
-                        <h2 className="mt-4 text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                        <p className="eyebrow text-[var(--amber)]">Straight answers</p>
+                        <h2 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
                             What we do — and what we won't
                         </h2>
                     </Reveal>
@@ -352,7 +357,7 @@ export default function Home() {
                                 "Filing on official portals — e-District, IGRS UP, e-Services Haryana — in your own name",
                                 "Appointment scheduling and support on the day",
                             ].map((x) => (
-                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-ink/80">
+                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-white/85">
                                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-[var(--green-deep)]" /> {x}
                                 </li>
                             ))}
@@ -366,7 +371,7 @@ export default function Home() {
                                 "No taking over your portal logins, OTPs or Aadhaar credentials",
                                 "No pretending to be a government body — we are a private consultancy",
                             ].map((x) => (
-                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-ink/80">
+                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-white/85">
                                     <X className="mt-0.5 h-4 w-4 shrink-0 text-red-500" /> {x}
                                 </li>
                             ))}
@@ -378,8 +383,8 @@ export default function Home() {
             {/* Coverage */}
             <section className="container-x py-20 sm:py-24" data-testid="home-coverage">
                 <Reveal>
-                    <p className="eyebrow text-[var(--amber-deep)]">Coverage</p>
-                    <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                    <p className="eyebrow text-[var(--amber)]">Coverage</p>
+                    <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-white sm:text-4xl">
                         Where we work across Delhi NCR
                     </h2>
                 </Reveal>
@@ -394,7 +399,7 @@ export default function Home() {
                     ))}
                 </div>
                 <Reveal delay={0.15}>
-                    <p className="mt-6 max-w-2xl text-xs leading-relaxed text-[var(--muted)]">
+                    <p className="mt-6 max-w-2xl text-xs leading-relaxed text-white/60">
                         We serve these locations through consultation, document preparation and
                         appointment support — we do not claim offices in cities where we do not
                         operate.
@@ -403,14 +408,14 @@ export default function Home() {
             </section>
 
             {/* FAQ */}
-            <section className="bg-[var(--paper-2)] py-20 sm:py-24" data-testid="home-faq">
+            <section className="py-20 sm:py-24" data-testid="home-faq">
                 <div className="container-x grid gap-10 lg:grid-cols-12">
                     <Reveal className="lg:col-span-5">
-                        <p className="eyebrow text-[var(--amber-deep)]">Common questions</p>
-                        <h2 className="mt-4 text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                        <p className="eyebrow text-[var(--amber)]">Common questions</p>
+                        <h2 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
                             Asked by almost every couple
                         </h2>
-                        <p className="mt-4 text-[15px] leading-relaxed text-[var(--muted)]">
+                        <p className="mt-4 text-[15px] leading-relaxed text-white/70">
                             Can't find your question? Call us — the first consultation is free.
                         </p>
                         <Link to="/faq" className="btn btn-ghost-ink mt-6" data-testid="home-faq-all-link">
@@ -430,12 +435,12 @@ export default function Home() {
                 <Reveal>
                     <div className="flex items-end justify-between gap-6">
                         <div>
-                            <p className="eyebrow text-[var(--amber-deep)]">From the blog</p>
-                            <h2 className="mt-4 max-w-xl text-2xl font-black tracking-tight text-ink sm:text-3xl">
+                            <p className="eyebrow text-[var(--amber)]">From the blog</p>
+                            <h2 className="mt-4 max-w-xl text-2xl font-black tracking-tight text-white sm:text-3xl">
                                 Read before you pay anyone
                             </h2>
                         </div>
-                        <Link to="/blog" className="btn btn-ghost-ink shrink-0" data-testid="home-blog-all-link">
+                        <Link to="/blog" className="btn btn-ghost-light shrink-0" data-testid="home-blog-all-link">
                             All articles <ArrowRight className="h-4 w-4" />
                         </Link>
                     </div>
@@ -456,21 +461,21 @@ export default function Home() {
             </section>
 
             {/* CTA */}
-            <section className="bg-[var(--paper-2)] py-20 text-ink sm:py-24" data-testid="home-cta">
+            <section className="py-20 text-white" data-testid="home-cta">
                 <div className="container-x relative z-10 grid items-center gap-12 lg:grid-cols-12">
                     <Reveal className="lg:col-span-6">
-                        <p className="eyebrow text-[var(--amber-deep)]">Start here</p>
-                        <h2 className="mt-4 text-3xl font-black leading-tight tracking-tight text-ink sm:text-5xl">
+                        <p className="eyebrow text-[var(--amber)]">Start here</p>
+                        <h2 className="mt-4 text-3xl font-black leading-tight tracking-tight text-white sm:text-5xl">
                             Tell us your situation.
                             <br />
                             We'll tell you the route — free.
                         </h2>
-                        <p className="mt-5 max-w-md text-[15px] leading-relaxed text-[var(--muted)]">
+                        <p className="mt-5 max-w-md text-[15px] leading-relaxed text-white/70">
                             Every case is different: religions, existing ceremonies, residences,
                             documents. A ten-minute consultation settles the route, the
                             documents and the honest timeline.
                         </p>
-                        <p className="mt-4 text-sm text-[var(--muted)]">
+                        <p className="mt-4 text-sm text-white/60">
                             अपने प्रश्नों के लिए सीधे हमें कॉल या WhatsApp करें — पहली सलाह निःशुल्क है।
                         </p>
                         <div className="mt-8 flex flex-wrap gap-3">
@@ -493,6 +498,6 @@ export default function Home() {
                     </Reveal>
                 </div>
             </section>
-        </>
+        </div>
     );
 }

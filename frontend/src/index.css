@@ -219,6 +219,19 @@ button, input, select, textarea, label, a, p, span, li {
         }
     }
 
+    /* ---------- Photo page background ---------- */
+    .home-photo {
+        background-color: var(--ink);
+        background-size: cover;
+        background-position: center 30%;
+        background-attachment: fixed;
+    }
+    @media (max-width: 820px), (prefers-reduced-motion: reduce) {
+        .home-photo {
+            background-attachment: scroll;
+        }
+    }
+
     /* ---------- Forms ---------- */
     .field-label {
         @apply mb-1.5 block text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)];
