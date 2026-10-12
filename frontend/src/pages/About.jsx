@@ -24,13 +24,13 @@ export default function About() {
                 path="/about-us"
             />
 
-            <section className="bg-ink text-white grain">
+            <section className="bg-[var(--paper)] text-ink grain">
                 <div className="container-x relative z-10 pb-16 pt-14 sm:pb-20 sm:pt-20">
-                    <p className="eyebrow text-[var(--amber)]">About us</p>
+                    <p className="eyebrow text-[var(--amber-deep)]">About us</p>
                     <h1 className="mt-4 max-w-3xl text-3xl font-black leading-[1.08] tracking-tight sm:text-5xl">
                         Honest paperwork for one of the biggest days of your life
                     </h1>
-                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-white/75 sm:text-base">
+                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-base">
                         Court Marriage Help is an independent legal consultancy serving couples
                         across Delhi, Noida, Ghaziabad, Greater Noida, Gurugram and Faridabad. We
                         handle the documentation, filings and appointments that turn a lawful
@@ -90,7 +90,7 @@ export default function About() {
                         {principles.map((p, i) => (
                             <Reveal key={p.n} delay={i * 0.06}>
                                 <div className="card-file card-tab h-full p-5">
-                                    <p className="text-2xl font-black text-gold/40">{p.n}</p>
+                                    <p className="text-2xl font-black text-gold/60">{p.n}</p>
                                     <h3 className="mt-3 text-[15px] font-bold leading-snug text-ink">{p.h}</h3>
                                     <p className="mt-2 text-[13px] leading-relaxed text-[var(--muted)]">{p.d}</p>
                                 </div>
@@ -140,8 +140,8 @@ export default function About() {
                 </div>
 
                 <Reveal delay={0.15}>
-                    <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-md bg-ink p-8 text-white sm:flex-row sm:items-center">
-                        <p className="max-w-xl text-[15px] leading-relaxed text-white/85">
+                    <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-md bg-[var(--ink-2)] p-8 text-[#F6F0E4] sm:flex-row sm:items-center">
+                        <p className="max-w-xl text-[15px] leading-relaxed text-[#D5DBE8]">
                             Talk to us about your marriage — religions, ceremonies, residences,
                             documents. The first consultation is free and the route becomes
                             clear fast.

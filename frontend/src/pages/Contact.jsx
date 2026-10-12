@@ -13,13 +13,13 @@ export default function Contact() {
                 path="/contact-us"
             />
 
-            <section className="bg-ink text-white grain">
+            <section className="bg-[var(--paper)] text-ink grain">
                 <div className="container-x relative z-10 pb-16 pt-14 sm:pb-20 sm:pt-20">
-                    <p className="eyebrow text-[var(--amber)]">Contact us</p>
+                    <p className="eyebrow text-[var(--amber-deep)]">Contact us</p>
                     <h1 className="mt-4 max-w-3xl text-3xl font-black leading-[1.08] tracking-tight sm:text-5xl">
                         Talk to a consultant today
                     </h1>
-                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-white/75 sm:text-base">
+                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-base">
                         Call or WhatsApp for the fastest response, or send the form below —
                         we reply on the number you give us. पहली सलाह निःशुल्क।
                     </p>
@@ -49,7 +49,7 @@ export default function Contact() {
                                         <Phone className="h-5 w-5" />
                                     </span>
                                     <span>
-                                        <span className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--muted)]">Call us</span>
+                                        <span className="block text-[13px] font-semibold uppercase tracking-[0.1em] text-[var(--label)]">Call us</span>
                                         <span className="block text-lg font-bold text-ink">{SITE.phoneDisplay}</span>
                                     </span>
                                 </a>
@@ -58,12 +58,12 @@ export default function Contact() {
                                         <MessageCircle className="h-5 w-5" />
                                     </span>
                                     <span>
-                                        <span className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--muted)]">WhatsApp</span>
+                                        <span className="block text-[13px] font-semibold uppercase tracking-[0.1em] text-[var(--label)]">WhatsApp</span>
                                         <span className="block text-lg font-bold text-ink">{SITE.phoneDisplay}</span>
                                     </span>
                                 </a>
                                 <div className="card-file p-5" data-testid="contact-coverage-card">
-                                    <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                                    <p className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-[var(--label)]">
                                         <MapPin className="h-4 w-4 text-[var(--amber-deep)]" /> Coverage
                                     </p>
                                     <p className="mt-2 text-sm leading-relaxed text-ink/85">
@@ -73,7 +73,7 @@ export default function Contact() {
                                     </p>
                                 </div>
                                 <div className="card-file p-5" data-testid="contact-hours-card">
-                                    <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                                    <p className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-[var(--label)]">
                                         <Clock3 className="h-4 w-4 text-[var(--amber-deep)]" /> Response
                                     </p>
                                     <p className="mt-2 text-sm leading-relaxed text-ink/85">

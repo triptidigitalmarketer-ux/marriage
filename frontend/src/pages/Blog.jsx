@@ -14,13 +14,13 @@ export default function Blog() {
                 path="/blog"
             />
 
-            <section className="bg-ink text-white grain">
+            <section className="bg-[var(--paper)] text-ink grain">
                 <div className="container-x relative z-10 pb-16 pt-14 sm:pb-20 sm:pt-20">
-                    <p className="eyebrow text-[var(--amber)]">The blog</p>
+                    <p className="eyebrow text-[var(--amber-deep)]">The blog</p>
                     <h1 className="mt-4 max-w-3xl text-3xl font-black leading-[1.08] tracking-tight sm:text-5xl">
                         Court marriage, explained without the folklore
                     </h1>
-                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-white/75 sm:text-base">
+                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-base">
                         Short, honest guides on the questions couples actually ask — notice
                         periods, documents, certificates and the promises you should walk away
                         from.
@@ -54,8 +54,8 @@ export default function Blog() {
                 </div>
 
                 <Reveal delay={0.15}>
-                    <div className="mt-12 flex flex-col items-start justify-between gap-5 rounded-md bg-ink p-8 text-white sm:flex-row sm:items-center">
-                        <p className="max-w-xl text-[15px] leading-relaxed text-white/85">
+                    <div className="mt-12 flex flex-col items-start justify-between gap-5 rounded-md bg-[var(--ink-2)] p-8 text-[#F6F0E4] sm:flex-row sm:items-center">
+                        <p className="max-w-xl text-[15px] leading-relaxed text-[#D5DBE8]">
                             Reading is a good start — a ten-minute call settles your specific
                             route, documents and timeline. The first consultation is free.
                         </p>

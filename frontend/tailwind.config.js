@@ -15,10 +15,12 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)'
       },
       colors: {
-        ink: '#0B192C',
-        paper: '#F7F3EA',
-        gold: { DEFAULT: '#D97706', deep: '#B45309', soft: '#FBE8C8' },
-        wa: { DEFAULT: '#25D366', deep: '#16A34A' },
+        ink: '#1B2740',
+        'ink-2': '#1B2D52',
+        paper: '#FAF7F0',
+        'paper-2': '#F3EDE0',
+        gold: { DEFAULT: '#E8820C', deep: '#B45309', soft: '#FBEAD3' },
+        wa: { DEFAULT: '#1FA855', deep: '#189547' },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

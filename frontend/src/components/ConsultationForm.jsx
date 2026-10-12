@@ -79,7 +79,7 @@ export default function ConsultationForm({ compact = false, defaultCity = "", te
     }
 
     const labelCls = compact
-        ? "mb-1 block text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--muted)]"
+        ? "mb-1 block text-[13px] font-semibold uppercase tracking-[0.06em] text-[var(--muted)]"
         : "field-label";
     const inputCls = "field-input";
 

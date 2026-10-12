@@ -49,17 +49,17 @@ export default function CallbackForm({ source = "callback", dark = false, testid
         <form onSubmit={onSubmit} noValidate data-testid={`${testidPrefix}-form`}>
             <div className="grid gap-3">
                 <div>
-                    <label htmlFor={`${testidPrefix}-name`} className={`block text-xs font-bold uppercase tracking-[0.12em] ${dark ? "text-white/60" : "text-[var(--muted)]"}`}>Name *</label>
+                    <label htmlFor={`${testidPrefix}-name`} className={`block text-[13px] font-semibold uppercase tracking-[0.08em] ${dark ? "text-white/60" : "text-[var(--muted)]"}`}>Name *</label>
                     <input id={`${testidPrefix}-name`} className="field-input" value={form.name} onChange={set("name")} placeholder="Your name" autoComplete="name" data-testid={`${testidPrefix}-name-input`} />
                     {errors.name && <p className="mt-1 text-xs font-medium text-red-600">{errors.name}</p>}
                 </div>
                 <div>
-                    <label htmlFor={`${testidPrefix}-phone`} className={`block text-xs font-bold uppercase tracking-[0.12em] ${dark ? "text-white/60" : "text-[var(--muted)]"}`}>Phone *</label>
+                    <label htmlFor={`${testidPrefix}-phone`} className={`block text-[13px] font-semibold uppercase tracking-[0.08em] ${dark ? "text-white/60" : "text-[var(--muted)]"}`}>Phone *</label>
                     <input id={`${testidPrefix}-phone`} className="field-input" value={form.phone} onChange={set("phone")} placeholder="10-digit mobile number" inputMode="tel" autoComplete="tel" data-testid={`${testidPrefix}-phone-input`} />
                     {errors.phone && <p className="mt-1 text-xs font-medium text-red-600">{errors.phone}</p>}
                 </div>
                 <div>
-                    <label htmlFor={`${testidPrefix}-city`} className={`block text-xs font-bold uppercase tracking-[0.12em] ${dark ? "text-white/60" : "text-[var(--muted)]"}`}>City *</label>
+                    <label htmlFor={`${testidPrefix}-city`} className={`block text-[13px] font-semibold uppercase tracking-[0.08em] ${dark ? "text-white/60" : "text-[var(--muted)]"}`}>City *</label>
                     <select id={`${testidPrefix}-city`} className="field-input" value={form.city} onChange={set("city")} data-testid={`${testidPrefix}-city-select`}>
                         <option value="">Select city</option>
                         {CITY_OPTIONS.map((c) => <option key={c} value={c}>{c}</option>)}

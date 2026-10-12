@@ -12,11 +12,11 @@ export default function Disclaimer() {
                 path="/legal-disclaimer"
             />
 
-            <section className="bg-ink text-white grain">
+            <section className="bg-[var(--paper)] text-ink grain">
                 <div className="container-x relative z-10 pb-14 pt-14 sm:pt-20">
-                    <p className="eyebrow text-[var(--amber)]">Legal</p>
+                    <p className="eyebrow text-[var(--amber-deep)]">Legal</p>
                     <h1 className="mt-4 text-3xl font-black tracking-tight sm:text-5xl">Legal Disclaimer</h1>
-                    <p className="mt-3 text-xs text-white/50">Please read carefully</p>
+                    <p className="mt-3 text-[13px] text-[var(--label)]">Please read carefully</p>
                 </div>
             </section>
 

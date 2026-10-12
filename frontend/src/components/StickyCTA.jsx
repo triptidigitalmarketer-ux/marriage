@@ -7,7 +7,7 @@ export default function StickyCTA() {
         <>
             {/* Mobile sticky bottom bar */}
             <div
-                className="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 gap-2 border-t border-white/10 bg-ink p-2 shadow-2xl md:hidden"
+                className="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 gap-2 border-t border-white/15 bg-[var(--ink-2)] p-2 shadow-2xl md:hidden"
                 data-testid="mobile-sticky-cta-bar"
             >
                 <a

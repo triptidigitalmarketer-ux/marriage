@@ -31,16 +31,16 @@ export default function BlogPost() {
         <>
             <Seo title={post.metaTitle} description={post.metaDesc} path={path} jsonLd={jsonLd} />
 
-            <section className="bg-ink text-white grain">
+            <section className="bg-[var(--paper)] text-ink grain">
                 <div className="container-x relative z-10 pb-14 pt-10 sm:pt-14">
                     <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Blog", to: "/blog" }, { label: post.tag }]} />
-                    <div className="mt-8 flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--amber)]">
+                    <div className="mt-8 flex items-center gap-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-[var(--amber-deep)]">
                         <span>{post.tag}</span>
                         <span className="h-1 w-1 rounded-full bg-[var(--amber)]" />
-                        <span className="inline-flex items-center gap-1.5 text-white/60 normal-case">
+                        <span className="inline-flex items-center gap-1.5 text-[var(--label)] normal-case">
                             <CalendarDays className="h-3.5 w-3.5" /> {new Date(post.date).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })}
                         </span>
-                        <span className="inline-flex items-center gap-1.5 text-white/60 normal-case">
+                        <span className="inline-flex items-center gap-1.5 text-[var(--label)] normal-case">
                             <Clock3 className="h-3.5 w-3.5" /> {post.readMins} min read
                         </span>
                     </div>

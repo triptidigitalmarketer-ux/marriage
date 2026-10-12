@@ -6,7 +6,7 @@ import { trackEvent, EVENTS } from "@/lib/analytics";
 
 export default function Footer() {
     return (
-        <footer className="bg-ink text-white/70 grain">
+        <footer className="bg-[var(--ink-2)] text-[#D5DBE8]">
             <div className="container-x relative z-10 grid gap-10 py-14 md:grid-cols-12">
                 <div className="md:col-span-4">
                     <Logo light />
@@ -37,7 +37,7 @@ export default function Footer() {
                 </div>
 
                 <div className="md:col-span-2">
-                    <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--amber)]">Company</h3>
+                    <h3 className="text-[13px] font-semibold uppercase tracking-[0.18em] text-[var(--amber)]">Company</h3>
                     <ul className="mt-4 space-y-2.5 text-sm">
                         {[
                             { l: "Home", t: "/" },
@@ -48,7 +48,7 @@ export default function Footer() {
                             { l: "FAQ", t: "/faq" },
                         ].map((x) => (
                             <li key={x.t}>
-                                <Link to={x.t} data-testid={`footer-link-${x.t.replace(/\//g, "") || "home"}`} className="transition-colors duration-200 hover:text-white">
+                                <Link to={x.t} data-testid={`footer-link-${x.t.replace(/\//g, "") || "home"}`} className="transition-colors duration-200 hover:text-[#F6F0E4]">
                                     {x.l}
                                 </Link>
                             </li>
@@ -57,11 +57,11 @@ export default function Footer() {
                 </div>
 
                 <div className="md:col-span-3">
-                    <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--amber)]">Services</h3>
+                    <h3 className="text-[13px] font-semibold uppercase tracking-[0.18em] text-[var(--amber)]">Services</h3>
                     <ul className="mt-4 space-y-2.5 text-sm">
                         {NAV.services.map((x) => (
                             <li key={x.to}>
-                                <Link to={x.to} data-testid={`footer-link-${x.to.replace(/\//g, "")}`} className="transition-colors duration-200 hover:text-white">
+                                <Link to={x.to} data-testid={`footer-link-${x.to.replace(/\//g, "")}`} className="transition-colors duration-200 hover:text-[#F6F0E4]">
                                     {x.label}
                                 </Link>
                             </li>
@@ -70,11 +70,11 @@ export default function Footer() {
                 </div>
 
                 <div className="md:col-span-3">
-                    <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--amber)]">Locations</h3>
+                    <h3 className="text-[13px] font-semibold uppercase tracking-[0.18em] text-[var(--amber)]">Locations</h3>
                     <ul className="mt-4 space-y-2.5 text-sm">
                         {NAV.locations.map((x) => (
                             <li key={x.to}>
-                                <Link to={x.to} data-testid={`footer-link-${x.to.replace(/\//g, "")}`} className="transition-colors duration-200 hover:text-white">
+                                <Link to={x.to} data-testid={`footer-link-${x.to.replace(/\//g, "")}`} className="transition-colors duration-200 hover:text-[#F6F0E4]">
                                     {x.label}
                                 </Link>
                             </li>
@@ -84,16 +84,16 @@ export default function Footer() {
             </div>
 
             <div className="border-t border-white/10">
-                <div className="container-x flex flex-col gap-3 py-5 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
+                <div className="container-x flex flex-col gap-3 py-5 text-[13px] text-[#D5DBE8]/80 md:flex-row md:items-center md:justify-between">
                     <p>© {new Date().getFullYear()} Court Marriage Help. All rights reserved.</p>
                     <p className="max-w-xl">
                         Court Marriage Help is an independent legal consultancy. It is not a
                         government portal and is not affiliated with any government body.
                     </p>
                     <p className="flex gap-4">
-                        <Link to="/privacy-policy" data-testid="footer-link-privacy" className="hover:text-white">Privacy Policy</Link>
-                        <Link to="/terms-and-conditions" data-testid="footer-link-terms" className="hover:text-white">Terms</Link>
-                        <Link to="/legal-disclaimer" data-testid="footer-link-disclaimer" className="hover:text-white">Disclaimer</Link>
+                        <Link to="/privacy-policy" data-testid="footer-link-privacy" className="hover:text-[#F6F0E4]">Privacy Policy</Link>
+                        <Link to="/terms-and-conditions" data-testid="footer-link-terms" className="hover:text-[#F6F0E4]">Terms</Link>
+                        <Link to="/legal-disclaimer" data-testid="footer-link-disclaimer" className="hover:text-[#F6F0E4]">Disclaimer</Link>
                     </p>
                 </div>
             </div>

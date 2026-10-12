@@ -4,43 +4,46 @@
 
 /* ---------- Design tokens — "Court File" aesthetic ---------- */
 :root {
-    --ink: #0b192c;
-    --ink-2: #12233e;
-    --ink-3: #1c3050;
-    --paper: #f7f3ea;
-    --paper-2: #efe8d8;
-    --card: #fffdf7;
-    --amber: #d97706;
+    --ink: #1b2740;
+    --ink-2: #1b2d52;
+    --ink-3: #27375c;
+    --cream: #f6f0e4;
+    --navy-body: #d5dbe8;
+    --paper: #faf7f0;
+    --paper-2: #f3ede0;
+    --card: #ffffff;
+    --amber: #e8820c;
     --amber-deep: #b45309;
-    --amber-soft: #fbe8c8;
-    --green: #25d366;
-    --green-deep: #16a34a;
-    --muted: #5b6b7e;
-    --line: rgba(11, 25, 44, 0.14);
-    --line-strong: rgba(11, 25, 44, 0.3);
+    --amber-soft: #fbead3;
+    --green: #1fa855;
+    --green-deep: #1fa855;
+    --muted: #3d4963;
+    --label: #4a5670;
+    --line: #e3dccb;
+    --line-strong: rgba(27, 39, 64, 0.25);
 }
 
 @layer base {
     :root {
-        --background: 40 33% 95%;
-        --foreground: 215 60% 11%;
-        --card: 45 50% 98%;
-        --card-foreground: 215 60% 11%;
-        --popover: 45 50% 98%;
-        --popover-foreground: 215 60% 11%;
-        --primary: 32 92% 44%;
-        --primary-foreground: 0 0% 100%;
-        --secondary: 42 33% 89%;
-        --secondary-foreground: 215 60% 11%;
-        --muted: 42 33% 89%;
-        --muted-foreground: 210 15% 42%;
-        --accent: 45 50% 92%;
-        --accent-foreground: 215 60% 11%;
+        --background: 40 33% 96%;
+        --foreground: 221 41% 18%;
+        --card: 0 0% 100%;
+        --card-foreground: 221 41% 18%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 221 41% 18%;
+        --primary: 31 92% 48%;
+        --primary-foreground: 221 41% 18%;
+        --secondary: 40 27% 91%;
+        --secondary-foreground: 221 41% 18%;
+        --muted: 40 27% 91%;
+        --muted-foreground: 227 20% 37%;
+        --accent: 40 27% 91%;
+        --accent-foreground: 221 41% 18%;
         --destructive: 0 72% 51%;
         --destructive-foreground: 0 0% 98%;
-        --border: 40 20% 80%;
-        --input: 40 20% 80%;
-        --ring: 32 92% 44%;
+        --border: 42 30% 85%;
+        --input: 42 30% 85%;
+        --ring: 31 92% 48%;
         --radius: 0.375rem;
     }
     * {
@@ -73,7 +76,7 @@ button, input, select, textarea, label, a, p, span, li {
 
 ::selection {
     background: var(--amber);
-    color: #fff;
+    color: var(--ink);
 }
 
 :focus-visible {
@@ -88,7 +91,7 @@ button, input, select, textarea, label, a, p, span, li {
     }
 
     .eyebrow {
-        @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em];
+        @apply inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em];
     }
 
     .eyebrow::before {
@@ -105,30 +108,43 @@ button, input, select, textarea, label, a, p, span, li {
     }
     .btn-amber {
         background: var(--amber);
-        @apply text-white shadow-[0_10px_24px_-10px_rgba(217,119,6,0.7)];
+        color: var(--ink);
+        box-shadow: 0 1px 2px rgba(27, 39, 64, 0.12);
     }
     .btn-amber:hover {
-        background: var(--amber-deep);
+        background: #d0750b;
     }
     .btn-ink {
-        background: var(--ink);
-        @apply text-white;
+        background: transparent;
+        border: 1px solid var(--ink);
+        color: var(--ink);
     }
     .btn-ink:hover {
-        background: var(--ink-3);
+        background: var(--ink);
+        color: var(--cream);
     }
     .btn-wa {
         background: var(--green-deep);
         @apply text-white;
     }
     .btn-wa:hover {
-        background: #0f7d38;
+        background: #189547;
     }
     .btn-ghost-light {
-        @apply border border-white/35 text-white hover:bg-white/10;
+        border: 1px solid rgba(246, 240, 228, 0.45);
+        color: var(--cream);
+    }
+    .btn-ghost-light:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
     .btn-ghost-ink {
-        @apply border border-ink/25 text-ink hover:bg-ink/5;
+        background: transparent;
+        border: 1px solid var(--ink);
+        color: var(--ink);
+    }
+    .btn-ghost-ink:hover {
+        background: var(--ink);
+        color: var(--cream);
     }
     .btn-outline-wa {
         border: 1px solid var(--green-deep);
@@ -145,14 +161,14 @@ button, input, select, textarea, label, a, p, span, li {
         background: var(--card);
         border: 1px solid var(--line);
         border-radius: 4px;
-        box-shadow: 0 1px 0 rgba(11, 25, 44, 0.04);
+        box-shadow: 0 2px 10px rgba(27, 39, 64, 0.05);
         transition: transform 0.25s ease, box-shadow 0.25s ease,
             border-color 0.25s ease;
     }
     .card-file:hover {
-        transform: translateY(-3px);
-        border-color: var(--line-strong);
-        box-shadow: 0 18px 36px -22px rgba(11, 25, 44, 0.35);
+        transform: translateY(-2px);
+        border-color: #d6cdb8;
+        box-shadow: 0 10px 24px -14px rgba(27, 39, 64, 0.18);
     }
     /* file-tab notch */
     .card-tab::before {
@@ -219,29 +235,18 @@ button, input, select, textarea, label, a, p, span, li {
         }
     }
 
-    /* ---------- Photo page background ---------- */
-    .home-photo {
-        background-color: var(--ink);
-        background-size: cover;
-        background-position: center 30%;
-        background-attachment: fixed;
-    }
-    @media (max-width: 820px), (prefers-reduced-motion: reduce) {
-        .home-photo {
-            background-attachment: scroll;
-        }
-    }
 
     /* ---------- Forms ---------- */
     .field-label {
-        @apply mb-1.5 block text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)];
+        @apply mb-1.5 block text-[13px] font-semibold uppercase tracking-[0.08em];
+        color: var(--label);
     }
     .field-input {
         @apply w-full rounded-md border border-[var(--line)] bg-white px-3.5 py-2.5 text-[15px] text-ink outline-none transition-colors duration-200;
     }
     .field-input:focus {
         border-color: var(--amber);
-        box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.14);
+        box-shadow: 0 0 0 3px rgba(232, 130, 12, 0.15);
     }
 
     /* ---------- Links ---------- */

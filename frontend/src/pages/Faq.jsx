@@ -25,13 +25,13 @@ export default function Faq() {
                 jsonLd={jsonLd}
             />
 
-            <section className="bg-ink text-white grain">
+            <section className="bg-[var(--paper)] text-ink grain">
                 <div className="container-x relative z-10 pb-16 pt-14 sm:pb-20 sm:pt-20">
-                    <p className="eyebrow text-[var(--amber)]">Frequently asked questions</p>
+                    <p className="eyebrow text-[var(--amber-deep)]">Frequently asked questions</p>
                     <h1 className="mt-4 max-w-3xl text-3xl font-black leading-[1.08] tracking-tight sm:text-5xl">
                         Court marriage questions, answered honestly
                     </h1>
-                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-white/75 sm:text-base">
+                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-base">
                         General legal information for Delhi NCR — for case-specific advice,
                         consult a qualified legal professional.
                     </p>
@@ -58,7 +58,7 @@ export default function Faq() {
                                 <a href={SITE.phoneHref} className="btn btn-amber mt-4 w-full" data-testid="faq-call-button">
                                     Call {SITE.phoneDisplay}
                                 </a>
-                                <h3 className="mt-8 text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--muted)]">Popular guides</h3>
+                                <h3 className="mt-8 text-[13px] font-semibold uppercase tracking-[0.14em] text-[var(--label)]">Popular guides</h3>
                                 <ul className="mt-3 space-y-2 text-[13px] font-semibold">
                                     {[
                                         { l: "Court Marriage Process in Delhi", t: "/court-marriage-process-delhi" },

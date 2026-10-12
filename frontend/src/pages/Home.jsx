@@ -69,7 +69,7 @@ function Hero() {
 
     const lines = ["Court Marriage", "in Delhi NCR,", "handled properly."];
     return (
-        <section ref={ref} className="bg-ink text-white grain">
+        <section ref={ref} className="bg-[var(--paper)] text-ink grain">
             <div className="container-x relative z-10 grid min-h-[calc(100vh-4rem)] items-center gap-12 pb-20 pt-12 lg:grid-cols-12 lg:pb-24">
                 <div className="lg:col-span-7">
                     <p className="eyebrow text-[var(--amber-deep)]" data-testid="hero-eyebrow">
@@ -104,7 +104,7 @@ function Hero() {
                             </span>
                         ))}
                     </h1>
-                    <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/75 sm:text-lg" data-testid="hero-subline">
+                    <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-lg" data-testid="hero-subline">
                         Documentation assistance, consultation and appointment support for court
                         marriage under the Special Marriage Act and registration of marriages
                         already performed — handled honestly, with the notice periods the law
@@ -114,7 +114,7 @@ function Hero() {
                         <a href={SITE.phoneHref} onClick={() => trackEvent(EVENTS.CALL, { location: "hero" })} className="btn btn-amber !px-7 !py-3.5 text-base" data-testid="hero-call-now-button">
                             <Phone className="h-5 w-5" /> Call Now — {SITE.phoneDisplay}
                         </a>
-                        <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent(EVENTS.WHATSAPP, { location: "hero" })} className="btn btn-ghost-light !px-7 !py-3.5 text-base" data-testid="hero-whatsapp-button">
+                        <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent(EVENTS.WHATSAPP, { location: "hero" })} className="btn btn-wa !px-7 !py-3.5 text-base" data-testid="hero-whatsapp-button">
                             <MessageCircle className="h-5 w-5" /> WhatsApp Enquiry
                         </a>
                         <Link to="/court-marriage-process-delhi" className="link-ink text-sm" data-testid="hero-process-link">
@@ -122,15 +122,15 @@ function Hero() {
                         </Link>
                     </div>
 
-                    <dl className="mt-12 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-md border border-white/15 bg-white/15 sm:grid-cols-4" data-testid="hero-facts">
+                    <dl className="mt-12 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-md border border-[var(--line)] bg-white sm:grid-cols-4" data-testid="hero-facts">
                         {[
                             ["30 days", "statutory notice under the SMA"],
                             ["3 witnesses", "required at solemnization"],
                             ["2 routes", "solemnization vs registration"],
                             ["Both partners", "present at every stage"],
                         ].map(([v, k]) => (
-                            <div key={k} className="bg-ink p-4">
-                                <dt className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/50">{k}</dt>
+                            <div key={k} className="bg-white p-4">
+                                <dt className="text-[13px] font-semibold uppercase tracking-[0.1em] text-[var(--label)]">{k}</dt>
                                 <dd className="mt-1 text-xl font-black text-[var(--amber)]">{v}</dd>
                             </div>
                         ))}
@@ -144,7 +144,7 @@ function Hero() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
                     >
-                        <div className="absolute -inset-3 rounded-lg border border-white/15" aria-hidden="true" />
+                        <div className="absolute -inset-3 rounded-lg border border-[var(--line)]" aria-hidden="true" />
                         <div className="overflow-hidden rounded-lg shadow-2xl">
                             <motion.img
                                 src={HERO_IMG}
@@ -155,9 +155,9 @@ function Hero() {
                             />
                         </div>
                         <Stamp />
-                        <div className="absolute -right-4 top-8 hidden rounded-md border border-gold/50 bg-ink/90 px-4 py-3 shadow-xl backdrop-blur sm:block">
-                            <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--amber)]">Statutory fact</p>
-                            <p className="mt-1 max-w-[190px] text-xs leading-relaxed text-white/85">
+                        <div className="absolute -right-4 top-8 hidden rounded-md border border-[var(--ink-2)] bg-[var(--ink-2)] px-4 py-3 shadow-lg sm:block">
+                            <p className="text-[13px] font-semibold uppercase tracking-[0.1em] text-[var(--amber)]">Statutory fact</p>
+                            <p className="mt-1 max-w-[190px] text-[13px] leading-relaxed text-[#D5DBE8]">
                                 The 30-day notice under the Special Marriage Act applies everywhere
                                 in India — beware anyone promising to skip it.
                             </p>
@@ -209,10 +209,10 @@ export default function Home() {
                         </Reveal>
                     ))}
                     <Reveal delay={0.3}>
-                        <div className="flex h-full flex-col justify-between rounded-md bg-ink p-6 text-white" data-testid="home-usp-cta-card">
+                        <div className="flex h-full flex-col justify-between rounded-md bg-[var(--ink-2)] p-6 text-[#F6F0E4]" data-testid="home-usp-cta-card">
                             <div>
                                 <h3 className="text-lg font-black leading-snug">Ready to start the right way?</h3>
-                                <p className="mt-2 text-[13px] leading-relaxed text-white/70">
+                                <p className="mt-2 text-[13px] leading-relaxed text-[#D5DBE8]">
                                     Tell us your situation — we will map the route, documents and
                                     honest timeline with you.
                                 </p>

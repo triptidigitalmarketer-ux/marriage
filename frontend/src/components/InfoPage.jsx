@@ -134,7 +134,7 @@ export default function InfoPage({ data, kind, formVariant = "callback" }) {
             <Seo title={data.metaTitle} description={data.metaDesc} path={path} jsonLd={jsonLd} />
 
             {/* Hero */}
-            <section className="bg-ink text-white grain">
+            <section className="bg-[var(--paper)] text-ink grain">
                 <div className="container-x relative z-10 pb-16 pt-10 sm:pb-20 sm:pt-14">
                     <Breadcrumbs
                         items={[
@@ -143,11 +143,11 @@ export default function InfoPage({ data, kind, formVariant = "callback" }) {
                             { label: data.city || data.h1 },
                         ]}
                     />
-                    <p className="eyebrow mt-8 text-[var(--amber)]">{data.kicker}</p>
+                    <p className="eyebrow mt-8 text-[var(--amber-deep)]">{data.kicker}</p>
                     <h1 className="mt-4 max-w-3xl text-3xl font-black leading-[1.08] tracking-tight sm:text-5xl">
                         {data.h1}
                     </h1>
-                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-white/75 sm:text-base">
+                    <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)] sm:text-base">
                         {data.intro}
                     </p>
 
@@ -159,22 +159,22 @@ export default function InfoPage({ data, kind, formVariant = "callback" }) {
                             href={SITE.whatsappHref}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn btn-ghost-light"
+                            className="btn btn-ghost-ink"
                             data-testid={`${data.slug}-whatsapp-button`}
                         >
                             <MessageCircle className="h-4 w-4" /> WhatsApp Us
                         </a>
-                        <Link to="/contact-us" className="btn btn-ghost-light" data-testid={`${data.slug}-book-consultation-button`}>
+                        <Link to="/contact-us" className="btn btn-ghost-ink" data-testid={`${data.slug}-book-consultation-button`}>
                             Book a Consultation
                         </Link>
                     </div>
 
                     {data.glance && data.glance.length > 0 && (
-                        <div className="mt-10 grid gap-px overflow-hidden rounded-md border border-white/15 bg-white/15 sm:grid-cols-2 lg:grid-cols-4" data-testid={`${data.slug}-glance-grid`}>
+                        <div className="mt-10 grid gap-px overflow-hidden rounded-md border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2 lg:grid-cols-4" data-testid={`${data.slug}-glance-grid`}>
                             {data.glance.map((g, i) => (
-                                <div key={i} className="bg-ink p-4">
-                                    <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--amber)]">{g.k}</p>
-                                    <p className="mt-1.5 text-[13px] leading-relaxed text-white/85">{g.v}</p>
+                                <div key={i} className="bg-white p-4">
+                                    <p className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[var(--amber-deep)]">{g.k}</p>
+                                    <p className="mt-1.5 text-[13px] leading-relaxed text-[var(--muted)]">{g.v}</p>
                                 </div>
                             ))}
                         </div>
@@ -242,7 +242,7 @@ export default function InfoPage({ data, kind, formVariant = "callback" }) {
                                 </div>
 
                                 <div className="mt-6">
-                                    <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--muted)]">Related pages</h3>
+                                    <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-[var(--label)]">Related pages</h3>
                                     <ul className="mt-3 space-y-2">
                                         {data.related.map((r) => (
                                             <li key={r.to}>
