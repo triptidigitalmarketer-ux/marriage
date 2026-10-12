@@ -1,0 +1,30 @@
+# Court Marriage Help
+
+Independent legal consultancy for court marriage and marriage registration across Delhi NCR — Delhi, Noida, Ghaziabad, Greater Noida, Gurugram and Faridabad.
+
+We help with documentation assistance, consultation and appointment support for:
+
+- Court marriage under the Special Marriage Act, 1954 (couples of any religion)
+- Registration of marriages already solemnized (including under the Hindu Marriage Act)
+- Interfaith court marriage guidance
+- Online application assistance on official government portals (e-District Delhi, IGRS UP, e-Services Haryana)
+- Court marriage documents, notice periods, jurisdiction and government process
+
+## Pages
+
+- / — Home
+- /about-us — About Court Marriage Help
+- /our-services — All services explained
+- /court-marriage-process-delhi — Step-by-step court marriage process in Delhi
+- /court-marriage-documents — Documents required by marriage route
+- /court-marriage-fees-delhi — Government charges vs professional charges
+- /online-court-marriage-application-delhi — e-District application assistance
+- /interfaith-court-marriage — Interfaith marriage under the Special Marriage Act
+- /special-marriage-act — The Special Marriage Act, 1954 explained
+- /marriage-registration-delhi — Registering an existing marriage in Delhi
+- /court-marriage-delhi, /court-marriage-noida, /court-marriage-ghaziabad, /court-marriage-greater-noida, /court-marriage-gurugram, /court-marriage-faridabad — Location pages
+- /contact-us — Enquiry form, call and WhatsApp
+- /faq — Frequently asked questions
+- /privacy-policy, /terms-and-conditions, /legal-disclaimer — Policies
+
+Court Marriage Help is a private consultancy and is not affiliated with any government body. General information on this site is not legal advice; consult a qualified advocate for case-specific guidance.

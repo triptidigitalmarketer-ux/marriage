@@ -1,0 +1,154 @@
+{
+  "project_name": "Court Marriage Help",
+  "archetype": "Legal Trust & High-Conversion Swiss Hybrid",
+  "target_audience": "Couples and families looking for court marriage, marriage registration, Tatkal registration, interfaith marriage legal guidance across Delhi, Noida, Ghaziabad, Greater Noida, Gurugram, and Faridabad",
+  "primary_objective": "Generate high-intent phone call leads, WhatsApp chats, and callback form submissions",
+
+  "typography": {
+    "font_family_global": "'Roboto', sans-serif",
+    "font_weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "client_instruction_note": "CRITICAL: Client mandates Roboto font globally across all text, headings, buttons, badges, subtext, forms, and cards.",
+    "hierarchy": {
+      "h1": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900",
+      "h3": "text-xl sm:text-2xl font-semibold text-slate-900",
+      "h4": "text-lg sm:text-xl font-medium text-slate-800",
+      "body_large": "text-base sm:text-lg text-slate-700 leading-relaxed",
+      "body_normal": "text-sm sm:text-base text-slate-600 leading-normal",
+      "caption": "text-xs sm:text-sm text-slate-500 font-medium"
+    }
+  },
+
+  "colors": {
+    "background_primary": "#F8FAF8",
+    "background_card": "#FFFFFF",
+    "background_dark_surface": "#0F172A",
+    "background_muted_slate": "#F1F5F9",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "text_muted": "#64748B",
+    "brand_navy": "#0B192C",
+    "brand_navy_light": "#1E293B",
+    "accent_amber": "#D97706",
+    "accent_amber_hover": "#B45309",
+    "accent_gold_bg": "#FEF3C7",
+    "whatsapp_green": "#25D366",
+    "whatsapp_green_dark": "#16A34A",
+    "border_light": "#E2E8F0",
+    "border_focus": "#D97706",
+    "trust_green": "#15803D",
+    "gradient_banner": "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)"
+  },
+
+  "layout_and_navigation": {
+    "sticky_header": {
+      "desktop": "Fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-md",
+      "elements": [
+        "Brand Logo ('Court Marriage Help' with Scales of Justice / Trust emblem)",
+        "Top utility bar with Toll-Free / Direct Lawyer Helpline (+91-9876543210) & Operating Hours (8 AM - 10 PM)",
+        "Navigation links: Home, About Us, Services (Dropdown), Locations (Dropdown), Process, Documents, FAQ, Contact",
+        "Header CTA Buttons: 'Call Now' (Amber pulse) & 'Request Callback' modal trigger"
+      ]
+    },
+    "mobile_sticky_bar": {
+      "container": "fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-800 p-2 flex items-center justify-between gap-2 md:hidden shadow-2xl",
+      "buttons": [
+        "Call Now button: flex-1 bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 text-sm shadow-md transition-transform active:scale-95",
+        "WhatsApp button: flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 text-sm shadow-md transition-transform active:scale-95"
+      ]
+    },
+    "floating_whatsapp_widget": {
+      "position": "fixed bottom-20 right-4 md:bottom-6 md:right-6 z-40 flex items-center gap-2 group cursor-pointer",
+      "features": "Glowing green pulsing badge, tooltip 'Need Urgent Legal Guidance? Chat on WhatsApp', direct link to launch WhatsApp Web/App with pre-filled message"
+    }
+  },
+
+  "pages_and_routes": {
+    "core_pages": [
+      { "path": "/", "name": "Home", "title": "Court Marriage & Registration Lawyers in Delhi NCR | Fast & Legal" },
+      { "path": "/about-us/", "name": "About Us", "title": "About Court Marriage Help | Senior Legal Consultants Delhi NCR" },
+      { "path": "/our-services/", "name": "Our Services", "title": "Court Marriage & Registration Services | Delhi, Noida, Gurgaon" },
+      { "path": "/contact-us/", "name": "Contact Us", "title": "Contact Court Marriage Help | Free 24/7 Helpline" },
+      { "path": "/faq/", "name": "FAQ", "title": "Frequently Asked Questions on Court Marriage & Marriage Certificate" },
+      { "path": "/privacy-policy/", "name": "Privacy Policy", "title": "Privacy Policy | Court Marriage Help" },
+      { "path": "/terms-and-conditions/", "name": "Terms & Conditions", "title": "Terms & Conditions | Court Marriage Help" },
+      { "path": "/legal-disclaimer/", "name": "Legal Disclaimer", "title": "Legal Disclaimer | Legal Consultancy Notice" }
+    ],
+    "location_seo_pages": [
+      { "path": "/court-marriage-delhi/", "city": "Delhi", "title": "Court Marriage Lawyer in Delhi | 1-Day Marriage Registration" },
+      { "path": "/court-marriage-noida/", "city": "Noida", "title": "Court Marriage Consultant in Noida | Same Day Service" },
+      { "path": "/court-marriage-ghaziabad/", "city": "Ghaziabad", "title": "Court Marriage Registration Ghaziabad | Legal Process & Fees" },
+      { "path": "/court-marriage-greater-noida/", "city": "Greater Noida", "title": "Court Marriage Advocate in Greater Noida | Fast Track Certificate" },
+      { "path": "/court-marriage-gurugram/", "city": "Gurugram", "title": "Court Marriage Advocate in Gurugram (Gurgaon) | Instant Helpline" },
+      { "path": "/court-marriage-faridabad/", "city": "Faridabad", "title": "Court Marriage Registration Faridabad | Government Approved Legal Lawyer" }
+    ],
+    "service_seo_pages": [
+      { "path": "/marriage-registration-delhi/", "service": "Marriage Registration", "title": "Marriage Certificate Registration in Delhi NCR | Tatkal Service" },
+      { "path": "/court-marriage-process-delhi/", "service": "Court Marriage Process", "title": "Step-by-Step Court Marriage Process in Delhi NCR | Complete Legal Guide" },
+      { "path": "/court-marriage-documents/", "service": "Required Documents", "title": "List of Required Documents for Court Marriage & Marriage Registration" },
+      { "path": "/court-marriage-fees-delhi/", "service": "Fees & Cost Breakdown", "title": "Court Marriage Fees & Official Charges in Delhi NCR (No Hidden Costs)" },
+      { "path": "/online-court-marriage-application-delhi/", "service": "Online Application", "title": "Online Court Marriage Application e-District Delhi Portal Assistance" },
+      { "path": "/interfaith-court-marriage/", "service": "Interfaith Marriage", "title": "Inter-Religion & Interfaith Court Marriage Lawyers Delhi NCR" },
+      { "path": "/special-marriage-act/", "service": "Special Marriage Act 1954", "title": "Special Marriage Act 1954 Court Marriage Rules, Notice & Timeline" }
+    ]
+  },
+
+  "interactive_components": [
+    {
+      "name": "CallbackModal",
+      "description": "Pop-up or side drawer form triggered from header, hero CTA, floating bar, and sticky buttons. Asks for Name, Phone, City, Service required, and Preferred Call Time."
+    },
+    {
+      "name": "DocumentChecklistWidget",
+      "description": "Interactive tabbed widget where users select marriage type (Arya Samaj + Legal Registration, Special Marriage Act, NRI Marriage, Marriage Certificate for Married Couples) and immediately view exact documents required for Groom & Bride, along with download/print option."
+    },
+    {
+      "name": "FeeCalculatorWidget",
+      "description": "Interactive fee estimator letting users pick city (Delhi / Noida / Ghaziabad / Gurugram / Faridabad) and marriage type to see transparent breakdown of government fees, legal drafting, stamp duty, and estimated processing timeframe."
+    },
+    {
+      "name": "NCRLocationSelector",
+      "description": "Visual grid and map selector for NCR cities with quick call numbers and local SDM office guidance for each district (e.g., Tis Hazari, Saket, Dwarka, Rohini, Gautam Buddh Nagar, etc.)."
+    },
+    {
+      "name": "EditorialCityMarquee",
+      "description": "Slow, smooth-drifting ticker highlighting coverage: 'Delhi • Noida • Ghaziabad • Greater Noida • Gurugram • Faridabad • 100% Legal & Private • SDM Approved Certificate'."
+    },
+    {
+      "name": "ProcessTimelineAccordion",
+      "description": "Step-by-step visual step flow comparison between 1-Day Urgent Registration vs 30-Day Special Marriage Act process."
+    }
+  ],
+
+  "image_urls": {
+    "hero_court_marriage": "https://images.unsplash.com/photo-1743684821666-05b9c5046937?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxjb3VydCUyMG1hcnJpYWdlJTIwbGF3eWVyJTIwaW5kaWElMjBsZWdhbCUyMGRvY3VtZW50JTIwbWFycmlhZ2UlMjByZWdpc3RyeSUyMGRlbGhpfGVufDB8fHx8MTc5MTc5NDIyMHww&ixlib=rb-4.1.0&q=85",
+    "legal_documents_signing": "https://images.unsplash.com/photo-1662984908253-8f20334be34d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjB3ZWRkaW5nJTIwY291cGxlJTIwbGVnYWwlMjBkb2N1bWVudHMlMjBzdGFtcCUyMHBhcGVyJTIwbGVnYWwlMjBhZHZpY2V8ZW58MHx8fHwxNzkxNzk0MjIwfDA&ixlib=rb-4.1.0&q=85",
+    "bride_groom_hands": "https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB3ZWRkaW5nJTIwY291cGxlJTIwbGVnYWwlMjBkb2N1bWVudHMlMjBzdGFtcCUyMHBhcGVyJTIwbGVnYWwlMjBhZHZpY2V8ZW58MHx8fHwxNzkxNzk0MjIwfDA&ixlib=rb-4.1.0&q=85",
+    "legal_scales_justice": "https://images.unsplash.com/photo-1687289133469-b2a07a13b78b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxsYXd5ZXIlMjBjb25zdWx0YXRpb24lMjBvZmZpY2UlMjBsZWdhbCUyMHN0YW1wJTIwcGFwZXIlMjBzY2FsZSUyMG9mJTIwanVzdGljZXxlbnwwfHx8fDE3OTE3OTQyMjN8MA&ixlib=rb-4.1.0&q=85",
+    "advocate_consultation": "https://images.unsplash.com/photo-1731955418581-5ba6827ca5ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxsYXd5ZXIlMjBjb25zdWx0YXRpb24lMjBvZmZpY2UlMjBsZWdhbCUyMHN0YW1wJTIwcGFwZXIlMjBzY2FsZSUyMG9mJTIwanVzdGljZXxlbnwwfHx8fDE3OTE3OTQyMjN8MA&ixlib=rb-4.1.0&q=85",
+    "legal_stamp_magnifier": "https://images.unsplash.com/photo-1570414036784-f96df71770cb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxsYXd5ZXIlMjBjb25zdWx0YXRpb24lMjBvZmZpY2UlMjBsZWdhbCUyMHN0YW1wJTIwcGFwZXIlMjBzY2FsZSUyMG9mJTIwanVzdGljZXxlbnwwfHx8fDE3OTE3OTQyMjN8MA&ixlib=rb-4.1.0&q=85"
+  },
+
+  "instructions_to_main_agent": [
+    "1. Apply font-family: 'Roboto', sans-serif globally across the whole application in index.css / App.css.",
+    "2. All interactive elements (buttons, links, form inputs, modal triggers, accordions, dropdowns) MUST have explicit data-testid attributes (e.g., data-testid='call-now-header-button', data-testid='callback-form-submit', data-testid='city-select-noida').",
+    "3. Header MUST NOT be completely transparent; use solid or high-opacity backdrop blur (bg-slate-900/95) to guarantee legibility.",
+    "4. Build custom SEO-optimized template structures for both location pages (/court-marriage-[city]) and service pages (/[service]-delhi).",
+    "5. Ensure the mobile sticky bar with Call Now and WhatsApp buttons is visible on viewports < 768px at all times.",
+    "6. Use Sonner toasts to give instant feedback on form submissions, callback requests, and checklist downloads.",
+    "7. Provide clear legal disclaimer components to establish genuine lawyer consultancy credibility and legal transparency."
+  ],
+
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Avoid generic AI slop centered layouts. Use asymmetrical Bento cards, high contrast legal trust badges, step timelines, and rich data tables.",
+    "Do NOT use dark colors as high-frequency multi-color gradients. Keep backgrounds solid or soft neutral, using rich navy and amber for accents.",
+    "Do NOT apply universal transition: all. Use targeted micro-transitions for buttons and hover cards.",
+    "Ensure all forms have accessible field labels, error validation, and confirmation modal overlays upon submission.",
+    "Use data-testid attributes rigorously on every interactive element."
+  ]
+}

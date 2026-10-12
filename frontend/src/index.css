@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Design tokens — "Court File" aesthetic ---------- */
+:root {
+    --ink: #0b192c;
+    --ink-2: #12233e;
+    --ink-3: #1c3050;
+    --paper: #f7f3ea;
+    --paper-2: #efe8d8;
+    --card: #fffdf7;
+    --amber: #d97706;
+    --amber-deep: #b45309;
+    --amber-soft: #fbe8c8;
+    --green: #25d366;
+    --green-deep: #16a34a;
+    --muted: #5b6b7e;
+    --line: rgba(11, 25, 44, 0.14);
+    --line-strong: rgba(11, 25, 44, 0.3);
+}
+
+@layer base {
+    :root {
+        --background: 40 33% 95%;
+        --foreground: 215 60% 11%;
+        --card: 45 50% 98%;
+        --card-foreground: 215 60% 11%;
+        --popover: 45 50% 98%;
+        --popover-foreground: 215 60% 11%;
+        --primary: 32 92% 44%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 42 33% 89%;
+        --secondary-foreground: 215 60% 11%;
+        --muted: 42 33% 89%;
+        --muted-foreground: 210 15% 42%;
+        --accent: 45 50% 92%;
+        --accent-foreground: 215 60% 11%;
+        --destructive: 0 72% 51%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 40 20% 80%;
+        --input: 40 20% 80%;
+        --ring: 32 92% 44%;
+        --radius: 0.375rem;
+    }
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: "Roboto", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+        Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea, label, a, p, span, li {
+    font-family: "Roboto", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+        Arial, sans-serif;
+}
+
+::selection {
+    background: var(--amber);
+    color: #fff;
+}
+
+:focus-visible {
+    outline: 2px solid var(--amber);
+    outline-offset: 2px;
+}
+
+/* ---------- Layout ---------- */
+@layer components {
+    .container-x {
+        @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+    }
+
+    .eyebrow {
+        @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em];
+    }
+
+    .eyebrow::before {
+        content: "";
+        @apply inline-block h-px w-8 bg-current opacity-60;
+    }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-bold transition-all duration-200;
+    }
+    .btn:active {
+        transform: scale(0.97);
+    }
+    .btn-amber {
+        background: var(--amber);
+        @apply text-white shadow-[0_10px_24px_-10px_rgba(217,119,6,0.7)];
+    }
+    .btn-amber:hover {
+        background: var(--amber-deep);
+    }
+    .btn-ink {
+        background: var(--ink);
+        @apply text-white;
+    }
+    .btn-ink:hover {
+        background: var(--ink-3);
+    }
+    .btn-wa {
+        background: var(--green-deep);
+        @apply text-white;
+    }
+    .btn-wa:hover {
+        background: #0f7d38;
+    }
+    .btn-ghost-light {
+        @apply border border-white/35 text-white hover:bg-white/10;
+    }
+    .btn-ghost-ink {
+        @apply border border-ink/25 text-ink hover:bg-ink/5;
+    }
+    .btn-outline-wa {
+        @apply border border-[var(--green-deep)]/50 text-[var(--green-deep)] hover:bg-[var(--green-deep)]/10;
+    }
+
+    /* ---------- Cards ---------- */
+    .card-file {
+        position: relative;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        box-shadow: 0 1px 0 rgba(11, 25, 44, 0.04);
+        transition: transform 0.25s ease, box-shadow 0.25s ease,
+            border-color 0.25s ease;
+    }
+    .card-file:hover {
+        transform: translateY(-3px);
+        border-color: var(--line-strong);
+        box-shadow: 0 18px 36px -22px rgba(11, 25, 44, 0.35);
+    }
+    /* file-tab notch */
+    .card-tab::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 24px;
+        width: 56px;
+        height: 4px;
+        background: var(--amber);
+        border-radius: 0 0 3px 3px;
+    }
+
+    .rule-h {
+        height: 1px;
+        background: var(--line);
+    }
+
+    /* ---------- Grain overlay ---------- */
+    .grain {
+        position: relative;
+        isolation: isolate;
+    }
+    .grain::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+    }
+
+    /* ---------- Marquee ---------- */
+    .marquee {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .marquee-track {
+        display: inline-flex;
+        align-items: center;
+        animation: marquee-scroll 48s linear infinite;
+        will-change: transform;
+    }
+    .marquee:hover .marquee-track {
+        animation-play-state: paused;
+    }
+    @keyframes marquee-scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    /* ---------- Stamp ---------- */
+    .stamp-spin {
+        animation: stamp-rotate 22s linear infinite;
+    }
+    @keyframes stamp-rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* ---------- Forms ---------- */
+    .field-label {
+        @apply mb-1.5 block text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)];
+    }
+    .field-input {
+        @apply w-full rounded-md border border-[var(--line)] bg-white px-3.5 py-2.5 text-[15px] text-ink outline-none transition-colors duration-200;
+    }
+    .field-input:focus {
+        border-color: var(--amber);
+        box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.14);
+    }
+
+    /* ---------- Links ---------- */
+    .link-ink {
+        @apply font-semibold text-ink underline decoration-[var(--amber)] decoration-2 underline-offset-4 transition-colors duration-200;
+    }
+    .link-ink:hover {
+        color: var(--amber-deep);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track,
+    .stamp-spin {
+        animation: none;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+}
