@@ -333,11 +333,11 @@ export default function Home() {
             </section>
 
             {/* Trust — what we do / don't */}
-            <section className="bg-ink py-20 text-white grain sm:py-24" data-testid="home-trust">
+            <section className="bg-[var(--paper-2)] py-20 text-ink sm:py-24" data-testid="home-trust">
                 <div className="container-x relative z-10 grid gap-10 md:grid-cols-2">
                     <Reveal>
-                        <p className="eyebrow text-[var(--amber)]">Straight answers</p>
-                        <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
+                        <p className="eyebrow text-[var(--amber-deep)]">Straight answers</p>
+                        <h2 className="mt-4 text-3xl font-black tracking-tight text-ink sm:text-4xl">
                             What we do — and what we won't
                         </h2>
                     </Reveal>
@@ -350,8 +350,8 @@ export default function Home() {
                                 "Filing on official portals — e-District, IGRS UP, e-Services Haryana — in your own name",
                                 "Appointment scheduling and support on the day",
                             ].map((x) => (
-                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-white/85">
-                                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-[var(--amber)]" /> {x}
+                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-ink/80">
+                                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-[var(--green-deep)]" /> {x}
                                 </li>
                             ))}
                         </ul>
@@ -364,8 +364,8 @@ export default function Home() {
                                 "No taking over your portal logins, OTPs or Aadhaar credentials",
                                 "No pretending to be a government body — we are a private consultancy",
                             ].map((x) => (
-                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-white/85">
-                                    <X className="mt-0.5 h-4 w-4 shrink-0 text-red-400" /> {x}
+                                <li key={x} className="flex gap-3 text-sm leading-relaxed text-ink/80">
+                                    <X className="mt-0.5 h-4 w-4 shrink-0 text-red-500" /> {x}
                                 </li>
                             ))}
                         </ul>
@@ -454,21 +454,21 @@ export default function Home() {
             </section>
 
             {/* CTA */}
-            <section className="bg-ink py-20 text-white grain sm:py-24" data-testid="home-cta">
+            <section className="bg-[var(--paper-2)] py-20 text-ink sm:py-24" data-testid="home-cta">
                 <div className="container-x relative z-10 grid items-center gap-12 lg:grid-cols-12">
                     <Reveal className="lg:col-span-6">
-                        <p className="eyebrow text-[var(--amber)]">Start here</p>
-                        <h2 className="mt-4 text-3xl font-black leading-tight tracking-tight sm:text-5xl">
+                        <p className="eyebrow text-[var(--amber-deep)]">Start here</p>
+                        <h2 className="mt-4 text-3xl font-black leading-tight tracking-tight text-ink sm:text-5xl">
                             Tell us your situation.
                             <br />
                             We'll tell you the route — free.
                         </h2>
-                        <p className="mt-5 max-w-md text-[15px] leading-relaxed text-white/75">
+                        <p className="mt-5 max-w-md text-[15px] leading-relaxed text-[var(--muted)]">
                             Every case is different: religions, existing ceremonies, residences,
                             documents. A ten-minute consultation settles the route, the
                             documents and the honest timeline.
                         </p>
-                        <p className="mt-4 text-sm text-white/60">
+                        <p className="mt-4 text-sm text-[var(--muted)]">
                             अपने प्रश्नों के लिए सीधे हमें कॉल या WhatsApp करें — पहली सलाह निःशुल्क है।
                         </p>
                         <div className="mt-8 flex flex-wrap gap-3">
