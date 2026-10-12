@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import {
     Phone, MessageCircle, ArrowRight, Scale, FileCheck, Globe2,
-    ClipboardCheck, ShieldCheck, Clock, Check, X,
+    ClipboardCheck, ShieldCheck, Clock, Check, X, Zap, MapPin, PhoneCall, Receipt,
 } from "lucide-react";
 import { Seo } from "@/lib/seo";
 import Reveal from "@/components/Reveal";
@@ -178,6 +178,54 @@ export default function Home() {
             <Hero />
 
             <Marquee items={[...SITE.cities, "Delhi NCR", "Free First Consultation"]} />
+
+            {/* USP */}
+            <section className="container-x py-20 sm:py-24" data-testid="home-usp-section">
+                <Reveal>
+                    <p className="eyebrow text-[var(--amber-deep)]">Why couples choose us</p>
+                    <h2 className="mt-4 max-w-3xl text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                        Court Marriage Guidance Made Simple Across Delhi NCR
+                    </h2>
+                </Reveal>
+                <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {[
+                        { icon: Zap, h: "Urgent Guidance, Lawful Timelines", d: "Fast, honest direction based on your eligibility and the applicable law — including what urgency can and cannot do." },
+                        { icon: MapPin, h: "Location-wise Assistance", d: "Support across Delhi, Noida, Ghaziabad, Greater Noida, Gurugram and Faridabad — the right office and portal for your address." },
+                        { icon: ClipboardCheck, h: "Documents Checked Early", d: "A preliminary document checklist and verification guidance before filing — so your file is right the first time." },
+                        { icon: PhoneCall, h: "Consultation Made Easy", d: "Reach us by phone, WhatsApp or the online form — whichever suits you. The first consultation is free." },
+                        { icon: Receipt, h: "Transparent Process & Fees", d: "Clear explanation of the applicable procedure, estimated timelines and service fees — statutory charges shown on official portals." },
+                    ].map((u, i) => (
+                        <Reveal key={u.h} delay={i * 0.06}>
+                            <div className="card-file card-tab flex h-full flex-col p-6" data-testid={`home-usp-card-${i + 1}`}>
+                                <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[var(--amber-soft)] text-[var(--amber-deep)]">
+                                    <u.icon className="h-5 w-5" />
+                                </span>
+                                <h3 className="mt-4 text-base font-bold text-ink">{u.h}</h3>
+                                <p className="mt-2 flex-1 text-[13px] leading-relaxed text-[var(--muted)]">{u.d}</p>
+                            </div>
+                        </Reveal>
+                    ))}
+                    <Reveal delay={0.3}>
+                        <div className="flex h-full flex-col justify-between rounded-md bg-ink p-6 text-white" data-testid="home-usp-cta-card">
+                            <div>
+                                <h3 className="text-lg font-black leading-snug">Ready to start the right way?</h3>
+                                <p className="mt-2 text-[13px] leading-relaxed text-white/70">
+                                    Tell us your situation — we will map the route, documents and
+                                    honest timeline with you.
+                                </p>
+                            </div>
+                            <div className="mt-6 flex flex-col gap-2">
+                                <Link to="/contact-us" className="btn btn-amber w-full" data-testid="home-usp-cta-button">
+                                    Book a Consultation
+                                </Link>
+                                <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="btn btn-outline-wa w-full" data-testid="home-usp-whatsapp-button">
+                                    <MessageCircle className="h-4 w-4" /> WhatsApp Us
+                                </a>
+                            </div>
+                        </div>
+                    </Reveal>
+                </div>
+            </section>
 
             {/* Services bento */}
             <section className="container-x py-20 sm:py-24" data-testid="home-services">

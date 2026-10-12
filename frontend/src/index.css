@@ -131,7 +131,12 @@ button, input, select, textarea, label, a, p, span, li {
         @apply border border-ink/25 text-ink hover:bg-ink/5;
     }
     .btn-outline-wa {
-        @apply border border-[var(--green-deep)]/50 text-[var(--green-deep)] hover:bg-[var(--green-deep)]/10;
+        border: 1px solid var(--green-deep);
+        color: var(--green-deep);
+        transition: background-color 0.2s ease;
+    }
+    .btn-outline-wa:hover {
+        background: rgba(22, 163, 74, 0.08);
     }
 
     /* ---------- Cards ---------- */

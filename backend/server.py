@@ -360,7 +360,12 @@ async def list_enquiries(request: Request, limit: int = 100):
     if not ADMIN_KEY or request.headers.get("x-admin-key") != ADMIN_KEY:
         raise HTTPException(status_code=401, detail="Unauthorized")
     limit = max(1, min(limit, 500))
-    docs = await db.enquiries.find({}, {"_id": 0}).sort("$natural", -1).to_list(limit)
+    docs = await db.enquiries.find(
+        {},
+        {"_id": 0, "name": 1, "phone": 1, "email": 1, "city": 1, "service": 1, "message": 1,
+         "contact_method": 1, "contact_time": 1, "consent": 1, "source": 1, "status": 1,
+         "reference": 1, "created_at": 1},
+    ).sort("$natural", -1).to_list(limit)
     out = []
     for d in docs:
         e = Enquiry.from_mongo(d)
