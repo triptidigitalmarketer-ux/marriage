@@ -13,6 +13,7 @@ import EnquiryForm from "@/components/EnquiryForm";
 import { SITE, NAV } from "@/lib/site";
 import { FAQS_HOME } from "@/data/faq";
 import { POSTS } from "@/data/posts";
+import { TESTIMONIALS } from "@/data/testimonials";
 import { trackEvent, EVENTS } from "@/lib/analytics";
 
 const HERO_IMG = "/images/hero-wedding.webp";
@@ -372,6 +373,32 @@ export default function Home() {
                             ))}
                         </ul>
                     </Reveal>
+                </div>
+            </section>
+
+            {/* Testimonials */}
+            <section className="container-x py-20 sm:py-24" data-testid="home-testimonials">
+                <Reveal>
+                    <p className="eyebrow text-[var(--amber-deep)]">Client voices</p>
+                    <h2 className="mt-4 max-w-2xl text-3xl font-black tracking-tight text-ink sm:text-4xl">
+                        Couples we've guided across the NCR
+                    </h2>
+                </Reveal>
+                <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {TESTIMONIALS.map((t, i) => (
+                        <Reveal key={t.name} delay={i * 0.06}>
+                            <figure className="card-file card-tab flex h-full flex-col p-6" data-testid={`home-testimonial-${i + 1}`}>
+                                <span className="text-4xl font-black leading-none text-[var(--amber)]" aria-hidden="true">"</span>
+                                <blockquote className="mt-1 flex-1 text-sm leading-relaxed text-ink/85">
+                                    {t.quote}
+                                </blockquote>
+                                <figcaption className="mt-5 border-t border-[var(--line)] pt-3">
+                                    <span className="block text-sm font-bold text-ink">{t.name}</span>
+                                    <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">{t.city}</span>
+                                </figcaption>
+                            </figure>
+                        </Reveal>
+                    ))}
                 </div>
             </section>
 
