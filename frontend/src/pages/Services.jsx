@@ -5,13 +5,13 @@ import Reveal from "@/components/Reveal";
 import { NAV, SITE } from "@/lib/site";
 
 const cards = [
-    { to: "/special-marriage-act", h: "Court Marriage — Special Marriage Act, 1954", d: "A civil marriage for couples of any religion: eligibility, 30-day notice, objection window, solemnization with three witnesses and the certificate." },
-    { to: "/marriage-registration-delhi", h: "Registration of an Existing Marriage", d: "Your ceremony is done — temple, nikah, church, Arya Samaj or court. We file for the government certificate under the applicable rules." },
-    { to: "/interfaith-court-marriage", h: "Interfaith Court Marriage", d: "Different religions, no conversion required by the SMA route. Documents, notice and practical realities handled with care." },
-    { to: "/court-marriage-process-delhi", h: "Process Guidance — Delhi", d: "Step-by-step: residence, notice, appointment, solemnization or verification — who signs, who attends, what happens on the day." },
-    { to: "/court-marriage-documents", h: "Documents & Affidavits", d: "Route-specific checklists for age, address, marriage evidence, photographs, affidavits and witnesses — prepared to your office's format." },
-    { to: "/court-marriage-fees-delhi", h: "Fees & Charges", d: "Statutory government fees (shown on official portals) and our professional charges (fixed, quoted upfront) — kept clearly separate." },
-    { to: "/online-court-marriage-application-delhi", h: "Online Application Assistance", d: "e-District Delhi, IGRS UP and e-Services Haryana applications — you remain the applicant; we prepare and guide every field." },
+    { to: "/special-marriage-act", img: "https://images.unsplash.com/photo-1788784507206-ad27424a2480?crop=entropy&cs=srgb&fm=jpg&q=80&w=1200", alt: "Stone courthouse building with arched windows and tall columns", h: "Court Marriage — Special Marriage Act, 1954", d: "A civil marriage for couples of any religion: eligibility, 30-day notice, objection window, solemnization with three witnesses and the certificate." },
+    { to: "/marriage-registration-delhi", img: "/images/mehndi-hands.webp", alt: "Close-up of the groom holding the bride's mehndi-decorated hand during wedding rituals", h: "Registration of an Existing Marriage", d: "Your ceremony is done — temple, nikah, church, Arya Samaj or court. We file for the government certificate under the applicable rules." },
+    { to: "/interfaith-court-marriage", img: "https://images.unsplash.com/photo-1735052712489-f45220126a0c?crop=entropy&cs=srgb&fm=jpg&q=80&w=1200", alt: "Bride and groom in traditional Indian wedding attire walking together on a path", h: "Interfaith Court Marriage", d: "Different religions, no conversion required by the SMA route. Documents, notice and practical realities handled with care." },
+    { to: "/court-marriage-process-delhi", img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=srgb&fm=jpg&q=80&w=1200", alt: "Person carefully writing on official paperwork at a desk", h: "Process Guidance — Delhi", d: "Step-by-step: residence, notice, appointment, solemnization or verification — who signs, who attends, what happens on the day." },
+    { to: "/court-marriage-documents", img: "https://images.unsplash.com/photo-1521791055366-0d553872125f?crop=entropy&cs=srgb&fm=jpg&q=80&w=1200", alt: "Person filling and signing official documents on a desk with a pen", h: "Documents & Affidavits", d: "Route-specific checklists for age, address, marriage evidence, photographs, affidavits and witnesses — prepared to your office's format." },
+    { to: "/court-marriage-fees-delhi", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=srgb&fm=jpg&q=80&w=1200", alt: "Person reviewing documents with a pen and calculator", h: "Fees & Charges", d: "Statutory government fees (shown on official portals) and our professional charges (fixed, quoted upfront) — kept clearly separate." },
+    { to: "/online-court-marriage-application-delhi", img: "https://images.unsplash.com/photo-1602016736566-7ed6a58894bd?crop=entropy&cs=srgb&fm=jpg&q=80&w=1200", alt: "Person applying online on a laptop at a desk", h: "Online Application Assistance", d: "e-District Delhi, IGRS UP and e-Services Haryana applications — you remain the applicant; we prepare and guide every field." },
 ];
 
 const religionWise = [
@@ -49,6 +49,15 @@ export default function Services() {
                     {cards.map((c, i) => (
                         <Reveal key={c.to} delay={i * 0.05}>
                             <Link to={c.to} className="card-file card-tab group flex h-full flex-col p-6" data-testid={`services-card-${c.to.replace(/\//g, "")}`}>
+                                <div className="mb-5 overflow-hidden rounded border border-[var(--line)]">
+                                    <img
+                                        src={c.img}
+                                        alt={c.alt}
+                                        className="aspect-[16/9] w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                                        loading="lazy"
+                                        data-testid={`services-card-image-${c.to.replace(/\//g, "")}`}
+                                    />
+                                </div>
                                 <h2 className="text-lg font-bold leading-snug text-ink">{c.h}</h2>
                                 <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{c.d}</p>
                                 <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-bold text-[var(--amber-deep)]">

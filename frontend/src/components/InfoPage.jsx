@@ -169,14 +169,16 @@ export default function InfoPage({ data, kind, formVariant = "callback" }) {
                         </Link>
                     </div>
 
-                    <div className="mt-10 grid gap-px overflow-hidden rounded-md border border-white/15 bg-white/15 sm:grid-cols-2 lg:grid-cols-4" data-testid={`${data.slug}-glance-grid`}>
-                        {data.glance.map((g, i) => (
-                            <div key={i} className="bg-ink p-4">
-                                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--amber)]">{g.k}</p>
-                                <p className="mt-1.5 text-[13px] leading-relaxed text-white/85">{g.v}</p>
-                            </div>
-                        ))}
-                    </div>
+                    {data.glance && data.glance.length > 0 && (
+                        <div className="mt-10 grid gap-px overflow-hidden rounded-md border border-white/15 bg-white/15 sm:grid-cols-2 lg:grid-cols-4" data-testid={`${data.slug}-glance-grid`}>
+                            {data.glance.map((g, i) => (
+                                <div key={i} className="bg-ink p-4">
+                                    <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--amber)]">{g.k}</p>
+                                    <p className="mt-1.5 text-[13px] leading-relaxed text-white/85">{g.v}</p>
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </section>
 

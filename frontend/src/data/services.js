@@ -9,9 +9,15 @@ export const SERVICES = {
         intro:
             "If your wedding has already taken place — a Hindu ceremony, nikah, church wedding or any other — registration documents the marriage that legally exists and gives you the government certificate that visa offices, banks and property registrars ask for. In Delhi, this is handled by the SDM concerned, with applications filed through the e-District Delhi portal.",
         image: {
-            src: "https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
-            alt: "Bride and groom's hands with mehndi during an Indian wedding ceremony",
+            src: "/images/mehndi-hands.webp",
+            alt: "Close-up of the groom holding the bride's mehndi-decorated hand during wedding rituals",
         },
+                glance: [
+            { k: "Who it's for", v: "Couples whose ceremony is already performed" },
+            { k: "Where", v: "SDM via the e-District Delhi portal" },
+            { k: "Notice", v: "No 30-day notice — verification instead" },
+            { k: "Outcome", v: "Government marriage certificate" },
+        ],
         blocks: [
             { t: "h2", text: "Who can apply" },
             { t: "p", text: "Registration is available for marriages performed according to the parties' personal law or customs, subject to the applicable registration rules. In Delhi, a Hindu marriage can be registered under the Delhi Hindu Marriage Registration Rules; marriages of other communities are registered under the provisions applicable to them. At least one partner generally needs to be able to show residence in the district of the SDM you apply to — the precise residence requirement follows the current rules, and we confirm it for your situation in the first consultation." },
@@ -63,6 +69,12 @@ export const SERVICES = {
         kicker: "Every step, explained without exaggeration",
         intro:
             "There are two different things people call 'court marriage': solemnizing a new civil marriage under the Special Marriage Act, 1954, and registering a marriage that has already been performed. They follow different procedures — and confusing them is the most common mistake couples make. This page explains both, step by step.",
+                glance: [
+            { k: "Two routes", v: "SMA solemnization vs registration of an existing marriage" },
+            { k: "SMA notice", v: "30 days, statutory — cannot be skipped" },
+            { k: "Witnesses", v: "Three for SMA solemnization" },
+            { k: "Where", v: "Marriage Officer / SDM of your district" },
+        ],
         blocks: [
             { t: "h2", text: "Route 1 — Solemnization under the Special Marriage Act" },
             { t: "p", text: "This is a civil marriage for couples of any religion — no religious ceremony is required, and no conversion is needed for interfaith couples. It is governed by the Special Marriage Act, 1954, and performed by the Marriage Officer (in Delhi, the SDM)." },
@@ -112,6 +124,12 @@ export const SERVICES = {
             src: "https://images.unsplash.com/photo-1521791055366-0d553872125f?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
             alt: "Person filling and signing official documents on a desk with a pen",
         },
+                glance: [
+            { k: "Checklists", v: "Separate lists for the solemnization and registration routes" },
+            { k: "Age & address", v: "Aadhaar, passport, matriculation certificate or similar" },
+            { k: "Witnesses", v: "Three for SMA; per state rules for registration" },
+            { k: "Formats", v: "Affidavits prepared to your office's current format" },
+        ],
         blocks: [
             { t: "h2", text: "Checklist A — Solemnization under the Special Marriage Act" },
             { t: "list", items: [
@@ -164,6 +182,12 @@ export const SERVICES = {
         kicker: "Government charges and professional charges — kept separate",
         intro:
             "Two different things get called 'court marriage fees': the statutory charges government offices levy, and the professional charges a consultancy charges for preparing and filing your case. Mixing them up is how inflated quotes happen. Here is exactly how the money works — including the fee figures we deliberately do not publish.",
+                glance: [
+            { k: "Government fees", v: "Nominal — shown on the official portal at filing" },
+            { k: "Our charges", v: "One fixed quote, before work begins" },
+            { k: "Incidentals", v: "Stamp paper, photographs, photocopies" },
+            { k: "Guarantees", v: "None on timelines — and we say so upfront" },
+        ],
         blocks: [
             { t: "h2", text: "1 · Government (statutory) charges" },
             { t: "p", text: "Statutory fees for notice, application and certificate are nominal and set by each state's current rules — Delhi through e-District, Uttar Pradesh through IGRS UP, Haryana through e-Services. The authentic figure for your application is displayed on the official portal at the time of filing, and it is paid by you, in your own name, on the government portal. We do not publish specific rupee figures because they change, vary by state and route, and quoting a stale number could mislead you — verifying the current schedule takes one minute on the portal, and we do it with you." },
@@ -209,6 +233,12 @@ export const SERVICES = {
         kicker: "e-District Delhi · you file, we guide",
         intro:
             "Delhi's e-District portal lets couples apply for registration of an existing marriage online — forms, document uploads and appointment booking all happen digitally, with one in-person verification at the SDM office. Note what this page is for: online filing covers registration of a marriage already solemnized. A new civil marriage under the Special Marriage Act always involves the office and its 30-day notice.",
+                glance: [
+            { k: "What's online", v: "Registration of an existing marriage on e-District Delhi" },
+            { k: "You stay applicant", v: "Logins and OTPs always stay with you" },
+            { k: "In person", v: "One verification visit with originals" },
+            { k: "Outcome", v: "Certificate issued after verification" },
+        ],
         blocks: [
             { t: "h2", text: "What can genuinely be done online in Delhi" },
             { t: "list", items: [
@@ -256,9 +286,15 @@ export const SERVICES = {
         intro:
             "For couples from different religions, the Special Marriage Act, 1954 is the standard route: a civil marriage valid across India, performed by the Marriage Officer, with no religious ceremony and no conversion required by the law. The Act's conditions, its 30-day notice and its three witnesses apply — and the rest is preparation, paperwork and, sometimes, patience with social pressure.",
         image: {
-            src: "https://images.unsplash.com/photo-1735052712489-f45220126a0c?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
-            alt: "Bride and groom in traditional Indian wedding attire walking together on a path",
+            src: "/images/hero-wedding.webp",
+            alt: "Indian bride and groom's henna-adorned hands held together, with red and white flower garlands",
         },
+                glance: [
+            { k: "The route", v: "Special Marriage Act, 1954 — a civil marriage" },
+            { k: "Conversion", v: "Not required by law" },
+            { k: "Notice", v: "30 days, statutory" },
+            { k: "Witnesses", v: "Three witnesses at solemnization" },
+        ],
         blocks: [
             { t: "h2", text: "Does either partner need to convert?" },
             { t: "p", text: "Under the Special Marriage Act — no. The marriage is solemnized as a civil marriage regardless of the partners' religions, and both partners keep their faith. Conversion is a personal choice some couples make for religious marriage ceremonies afterwards, but it is not a legal requirement for a court marriage. If one partner does convert and the couple then wishes to register under the Hindu Marriage Act, different rules apply — we walk you through both positions in the consultation." },
@@ -305,6 +341,12 @@ export const SERVICES = {
             src: "https://images.unsplash.com/photo-1687289133469-b2a07a13b78b?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
             alt: "Scales of justice and legal books on a lawyer's desk",
         },
+                glance: [
+            { k: "What it is", v: "India's civil marriage law since 1954" },
+            { k: "Applies to", v: "Any eligible couple — any religion, or none" },
+            { k: "Notice", v: "30 days with an objection window" },
+            { k: "Solemnization", v: "Before the Marriage Officer with three witnesses" },
+        ],
         blocks: [
             { t: "h2", text: "Who the Act applies to" },
             { t: "p", text: "The SMA applies to any couple marrying as a civil marriage in India — same-faith couples who prefer a civil marriage, and different-faith couples for whom it is the usual route. It is solemnization, not registration: it creates the marriage itself, whereas registration rules merely certify a marriage that already exists. The distinction matters — the two routes have different steps, timelines and offices." },

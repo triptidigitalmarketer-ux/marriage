@@ -12,16 +12,16 @@ export const IMAGES = {
         alt: "Person in an orange shirt carefully filling out paperwork",
     },
     "why-marriage-certificate-matters": {
-        src: "https://images.unsplash.com/photo-1630526720753-aa4e71acf67d?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
-        alt: "Newly married Indian couple in traditional wedding attire standing together",
+        src: "/images/mehndi-hands.webp",
+        alt: "Close-up of the groom holding the bride's mehndi-decorated hand during wedding rituals",
     },
     "same-day-court-marriage-promises": {
         src: "https://images.unsplash.com/photo-1570414036784-f96df71770cb?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
         alt: "Legal documents with a stamp and magnifying glass under review",
     },
     "nri-foreign-national-court-marriage": {
-        src: "https://images.unsplash.com/photo-1735052712464-9d24b69be5f5?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
-        alt: "Bride and groom in traditional Indian wedding attire walking together on a path",
+        src: "/images/hero-wedding.webp",
+        alt: "Indian bride and groom's henna-adorned hands held together, with red and white flower garlands",
     },
 };
 

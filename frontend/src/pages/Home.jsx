@@ -15,8 +15,7 @@ import { FAQS_HOME } from "@/data/faq";
 import { POSTS } from "@/data/posts";
 import { trackEvent, EVENTS } from "@/lib/analytics";
 
-const HERO_IMG =
-    "https://images.unsplash.com/photo-1665960213508-48f07086d49c?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600";
+const HERO_IMG = "/images/hero-wedding.webp";
 
 const serviceCards = [
     { icon: Scale, title: "Court Marriage under the Special Marriage Act", desc: "A civil marriage for couples of any religion — notice, objection window and solemnization handled properly.", to: "/special-marriage-act" },
@@ -146,7 +145,7 @@ function Hero() {
                         <div className="overflow-hidden rounded-lg shadow-2xl">
                             <motion.img
                                 src={HERO_IMG}
-                                alt="Indian bride and groom in traditional wedding attire"
+                                alt="Indian bride and groom's henna-adorned hands held together, with red and white flower garlands"
                                 className="aspect-[4/5] w-full object-cover"
                                 style={{ y: imgY }}
                                 data-testid="hero-image"
