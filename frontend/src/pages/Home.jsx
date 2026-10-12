@@ -52,7 +52,9 @@ function Stamp() {
                 <text fontSize="10" letterSpacing="2.4" fill="#D97706" fontWeight="700" fontFamily="Roboto, sans-serif">
                     <textPath href="#stamp-circle">COURT MARRIAGE • DELHI NCR • 1954 ACT •</textPath>
                 </text>
-                <path d="M60 40v22M50 54h20M55 62l-4 8h8l-4-8zM65 62l-4 8h8l-4-8z" stroke="#F7F3EA" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+                <circle cx="54" cy="57" r="8.5" fill="none" stroke="#F7F3EA" strokeWidth="2.2" />
+                <circle cx="66" cy="55" r="8.5" fill="none" stroke="#D97706" strokeWidth="2.2" />
+                <path d="M60 36l2.6 4.2L60 44.4l-2.6-4.2z" fill="#D97706" />
             </svg>
         </div>
     );
