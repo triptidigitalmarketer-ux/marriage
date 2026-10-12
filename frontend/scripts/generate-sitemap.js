@@ -28,6 +28,13 @@ const ROUTES = [
     "/online-court-marriage-application-delhi",
     "/interfaith-court-marriage",
     "/special-marriage-act",
+    "/blog",
+    "/blog/special-marriage-act-30-day-notice-explained",
+    "/blog/court-marriage-vs-marriage-registration",
+    "/blog/marriage-registration-mistakes-delhi-ncr",
+    "/blog/why-marriage-certificate-matters",
+    "/blog/same-day-court-marriage-promises",
+    "/blog/nri-foreign-national-court-marriage",
 ];
 
 try {

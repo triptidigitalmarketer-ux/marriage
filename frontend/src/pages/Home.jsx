@@ -12,6 +12,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import EnquiryForm from "@/components/EnquiryForm";
 import { SITE, NAV } from "@/lib/site";
 import { FAQS_HOME } from "@/data/faq";
+import { POSTS } from "@/data/posts";
 import { trackEvent, EVENTS } from "@/lib/analytics";
 
 const HERO_IMG =
@@ -372,6 +373,36 @@ export default function Home() {
                             <FaqAccordion items={FAQS_HOME} testidPrefix="home-faq" />
                         </div>
                     </Reveal>
+                </div>
+            </section>
+
+            {/* Blog teaser */}
+            <section className="container-x pb-4 pt-20" data-testid="home-blog">
+                <Reveal>
+                    <div className="flex items-end justify-between gap-6">
+                        <div>
+                            <p className="eyebrow text-[var(--amber-deep)]">From the blog</p>
+                            <h2 className="mt-4 max-w-xl text-2xl font-black tracking-tight text-ink sm:text-3xl">
+                                Read before you pay anyone
+                            </h2>
+                        </div>
+                        <Link to="/blog" className="btn btn-ghost-ink shrink-0" data-testid="home-blog-all-link">
+                            All articles <ArrowRight className="h-4 w-4" />
+                        </Link>
+                    </div>
+                </Reveal>
+                <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                    {POSTS.slice(0, 3).map((p, i) => (
+                        <Reveal key={p.slug} delay={i * 0.06}>
+                            <Link to={`/blog/${p.slug}`} className="card-file group flex h-full flex-col p-5" data-testid={`home-blog-card-${p.slug}`}>
+                                <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--amber-deep)]">{p.tag}</span>
+                                <h3 className="mt-2 flex-1 text-[15px] font-bold leading-snug text-ink">{p.h1}</h3>
+                                <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-[var(--amber-deep)]">
+                                    {p.readMins} min read <ArrowRight className="h-3 w-3 transition-transform duration-200 group-hover:translate-x-1" />
+                                </span>
+                            </Link>
+                        </Reveal>
+                    ))}
                 </div>
             </section>
 

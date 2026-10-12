@@ -13,6 +13,8 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import Faq from "@/pages/Faq";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Terms from "@/pages/Terms";
@@ -102,6 +104,8 @@ function App() {
                             <Route path="/about-us" element={<About />} />
                             <Route path="/our-services" element={<Services />} />
                             <Route path="/contact-us" element={<Contact />} />
+                            <Route path="/blog" element={<Blog />} />
+                            <Route path="/blog/:slug" element={<BlogPost />} />
                             <Route path="/faq" element={<Faq />} />
                             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                             <Route path="/terms-and-conditions" element={<Terms />} />

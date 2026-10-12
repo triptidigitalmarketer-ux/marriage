@@ -26,5 +26,6 @@ We help with documentation assistance, consultation and appointment support for:
 - /contact-us — Enquiry form, call and WhatsApp
 - /faq — Frequently asked questions
 - /privacy-policy, /terms-and-conditions, /legal-disclaimer — Policies
+- /blog — Guides: the 30-day notice, court marriage vs registration, certificate delays, why the certificate matters, false same-day promises, NRI/foreign-national cases
 
 Court Marriage Help is a private consultancy and is not affiliated with any government body. General information on this site is not legal advice; consult a qualified advocate for case-specific guidance.

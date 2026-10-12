@@ -43,6 +43,7 @@ export default function Footer() {
                             { l: "Home", t: "/" },
                             { l: "About Us", t: "/about-us" },
                             { l: "Our Services", t: "/our-services" },
+                            { l: "Blog", t: "/blog" },
                             { l: "Contact Us", t: "/contact-us" },
                             { l: "FAQ", t: "/faq" },
                         ].map((x) => (

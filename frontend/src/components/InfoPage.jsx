@@ -7,7 +7,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import CallbackForm from "@/components/CallbackForm";
 import { SITE } from "@/lib/site";
 
-function Blocks({ blocks }) {
+export function Blocks({ blocks }) {
     return blocks.map((b, i) => {
         switch (b.t) {
             case "h2":

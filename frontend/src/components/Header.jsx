@@ -15,6 +15,7 @@ const coreLinks = [
     { label: "Home", to: "/" },
     { label: "About Us", to: "/about-us" },
     { label: "Our Services", to: "/our-services" },
+    { label: "Blog", to: "/blog" },
     { label: "FAQ", to: "/faq" },
     { label: "Contact Us", to: "/contact-us" },
 ];
@@ -24,7 +25,7 @@ function Dropdown({ label, items, testid }) {
         <DropdownMenu>
             <DropdownMenuTrigger
                 data-testid={testid}
-                className="inline-flex items-center gap-1 rounded px-1 py-1 text-[13px] font-semibold text-white/80 transition-colors duration-200 hover:text-white"
+                className="inline-flex items-center gap-1 whitespace-nowrap rounded px-1 py-1 text-[13px] font-semibold text-white/80 transition-colors duration-200 hover:text-white"
             >
                 {label}
                 <ChevronDown className="h-3.5 w-3.5 opacity-70" />
@@ -65,13 +66,13 @@ export default function Header({ onRequestCallback }) {
                     <Logo light />
                 </Link>
 
-                <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
+                <nav className="hidden items-center gap-5 lg:flex" aria-label="Primary">
                     {coreLinks.slice(0, 3).map((l) => (
                         <Link
                             key={l.to}
                             to={l.to}
                             data-testid={`nav-link-${l.to.replace(/\//g, "") || "home"}`}
-                            className={`text-[13px] font-semibold transition-colors duration-200 ${pathname === l.to ? "text-white" : "text-white/80 hover:text-white"}`}
+                            className={`whitespace-nowrap text-[13px] font-semibold transition-colors duration-200 ${pathname === l.to ? "text-white" : "text-white/80 hover:text-white"}`}
                         >
                             {l.label}
                         </Link>
@@ -83,7 +84,7 @@ export default function Header({ onRequestCallback }) {
                             key={l.to}
                             to={l.to}
                             data-testid={`nav-link-${l.to.replace(/\//g, "") || "home"}`}
-                            className={`text-[13px] font-semibold transition-colors duration-200 ${pathname === l.to ? "text-white" : "text-white/80 hover:text-white"}`}
+                            className={`whitespace-nowrap text-[13px] font-semibold transition-colors duration-200 ${pathname === l.to ? "text-white" : "text-white/80 hover:text-white"}`}
                         >
                             {l.label}
                         </Link>
@@ -95,7 +96,7 @@ export default function Header({ onRequestCallback }) {
                         href={SITE.phoneHref}
                         onClick={() => trackEvent(EVENTS.CALL, { location: "header" })}
                         data-testid="header-call-now-button"
-                        className="btn btn-amber hidden !px-4 !py-2.5 sm:inline-flex"
+                        className="btn btn-amber hidden whitespace-nowrap !px-4 !py-2.5 sm:inline-flex"
                         aria-label={`Call ${SITE.phoneDisplay}`}
                     >
                         <Phone className="h-4 w-4" />
@@ -107,7 +108,7 @@ export default function Header({ onRequestCallback }) {
                             onRequestCallback();
                         }}
                         data-testid="header-callback-trigger"
-                        className="btn btn-ghost-light hidden !px-4 !py-2.5 md:inline-flex"
+                        className="btn btn-ghost-light hidden whitespace-nowrap !px-4 !py-2.5 md:inline-flex"
                     >
                         Request Callback
                     </button>

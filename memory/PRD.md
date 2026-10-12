@@ -24,9 +24,11 @@ Build a professional, trustworthy, SEO-friendly court marriage and marriage regi
 - ✅ SEO: unique titles/descriptions per page, one H1, breadcrumbs, JSON-LD (LegalService + FAQPage + BreadcrumbList), robots.txt, llms.txt, sitemap generator, noindex on 404 semantics
 - ✅ Trust: honest do/don't positioning, no fake reviews/ratings/addresses, disclaimers
 - ✅ Analytics wiring: GA4 + consent banner; GSC spot marked in index.html
+- ✅ Blog (added 2026-10-12): /blog index + 6 posts (30-day notice, court marriage vs registration, certificate-delay mistakes, why the certificate matters, false same-day promises, NRI/foreign-national cases) — unique titles/descriptions, BlogPosting JSON-LD, internal links, homepage teaser, in sitemap (28 routes)
+- ✅ Domain wired (2026-10-12): courtmarriagehelp.in — REACT_APP_SITE_URL set; static canonical + og:url in head; per-route canonicals active; sitemap.xml (28 URLs) + robots.txt Sitemap line serve correctly; JSON-LD url set
 
 ## Backlog
-- P0: replace phone/WhatsApp placeholder (site.js); set ENQUIRY_EMAIL; set REACT_APP_SITE_URL after domain purchase + redeploy (activates canonical/og:url + sitemap); add GA4 ID + GSC token.
+- P0: replace phone/WhatsApp placeholder (site.js — user chose to keep placeholder for now); set ENQUIRY_EMAIL (user skipped); GA4 ID (user skipped). ✅ Domain confirmed: courtmarriagehelp.in — REACT_APP_SITE_URL set, canonicals/og:url/JSON-LD url + sitemap.xml (21 routes) + robots Sitemap line live.
 - P1: Google Business Profile (if eligible); Hindi versions of key guides; WhatsApp click-to-chat UTM tagging.
 - P2: admin dashboard UI for enquiries; blog/resources for long-tail content; OG share image once domain confirmed.
 
