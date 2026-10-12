@@ -68,7 +68,13 @@ function Hero() {
 
     const lines = ["Court Marriage", "in Delhi NCR,", "handled properly."];
     return (
-        <section ref={ref} className="text-white grain">
+        <section
+            ref={ref}
+            className="home-photo text-white grain"
+            style={{
+                backgroundImage: `linear-gradient(rgba(11, 25, 44, 0.9), rgba(11, 25, 44, 0.9)), url(${process.env.PUBLIC_URL}/images/mehndi-hands.webp)`,
+            }}
+        >
             <div className="container-x relative z-10 grid min-h-[calc(100vh-4rem)] items-center gap-12 pb-20 pt-12 lg:grid-cols-12 lg:pb-24">
                 <div className="lg:col-span-7">
                     <p className="eyebrow text-[var(--amber)]" data-testid="hero-eyebrow">
@@ -170,12 +176,7 @@ function Hero() {
 
 export default function Home() {
     return (
-        <div
-            className="home-photo text-white"
-            style={{
-                backgroundImage: `linear-gradient(rgba(11, 25, 44, 0.9), rgba(11, 25, 44, 0.9)), url(${process.env.PUBLIC_URL}/images/mehndi-hands.webp)`,
-            }}
-        >
+        <div className="bg-ink text-white">
             <Seo
                 title="Court Marriage in Delhi NCR | Process, Documents & Fees"
                 description="Court marriage and marriage registration across Delhi, Noida, Ghaziabad & NCR — the Special Marriage Act process, documents, notice periods, honest fees, and free consultation by call or WhatsApp."
@@ -249,7 +250,7 @@ export default function Home() {
                 </Reveal>
                 <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {serviceCards.map((c, i) => (
-                        <Reveal key={c.to} delay={i * 0.06} className={i === 0 ? "sm:col-span-2" : ""}>
+                        <Reveal key={c.to} delay={i * 0.06}>
                             <Link
                                 to={c.to}
                                 className="card-file card-tab group flex h-full flex-col p-6"
