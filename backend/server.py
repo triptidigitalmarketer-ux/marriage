@@ -72,7 +72,16 @@ SERVICES = [
     "Document preparation",
     "Urgent / priority appointment help",
     "Not sure — need guidance",
+    # Consultation form service options
+    "Urgent Court Marriage Guidance",
+    "Special Marriage Act",
+    "Existing Marriage Registration",
+    "Interfaith Marriage Guidance",
+    "Document Verification",
+    "Other",
 ]
+
+CONTACT_METHODS = ["Phone", "WhatsApp", "Online Consultation"]
 
 class Enquiry(BaseDocument):
     name: str
@@ -80,6 +89,10 @@ class Enquiry(BaseDocument):
     city: str
     service: str
     message: Optional[str] = ""
+    email: Optional[str] = ""
+    contact_method: Optional[str] = ""
+    contact_time: Optional[str] = ""
+    consent: Optional[bool] = False
     source: str = "enquiry"
     status: str = "new"
     reference: str = Field(default_factory=lambda: "CMH-" + uuid.uuid4().hex[:8].upper())
@@ -91,6 +104,10 @@ class EnquiryIn(BaseModel):
     city: str
     service: str
     message: Optional[str] = ""
+    email: Optional[str] = ""
+    contact_method: Optional[str] = ""
+    contact_time: Optional[str] = ""
+    consent: Optional[bool] = False
     source: str = "enquiry"
     company: Optional[str] = ""  # honeypot
 
@@ -141,7 +158,7 @@ class EnquiryIn(BaseModel):
     @field_validator("source")
     @classmethod
     def v_source(cls, v):
-        return v if v in ("enquiry", "callback") else "enquiry"
+        return v if v in ("enquiry", "callback", "consultation") else "enquiry"
 
 # ---------- Spam protection ----------
 
@@ -262,20 +279,24 @@ async def send_email(*, to: str, subject: str, html: str, reply_to: Optional[str
 
 def _enquiry_email_html(e: Enquiry) -> str:
     created = e.created_at[:16].replace("T", " ") + " UTC"
+    fields = [
+        ("Reference", e.reference),
+        ("Name", e.name),
+        ("Phone", e.phone),
+        ("Email", e.email or "—"),
+        ("City / Location", e.city),
+        ("Service", e.service),
+        ("Preferred contact", e.contact_method or "—"),
+        ("Preferred time", e.contact_time or "—"),
+        ("Message", e.message or "—"),
+        ("Source", e.source),
+    ]
     rows = "".join(
         f"<tr>"
         f"<td style='padding:6px 16px 6px 0;color:#5B6B7E;font-family:Arial,sans-serif;font-size:13px'>{escape(k)}</td>"
         f"<td style='padding:6px 0;color:#0B192C;font-family:Arial,sans-serif;font-size:14px'><strong>{escape(v)}</strong></td>"
         f"</tr>"
-        for k, v in [
-            ("Reference", e.reference),
-            ("Name", e.name),
-            ("Phone", e.phone),
-            ("City", e.city),
-            ("Service", e.service),
-            ("Message", e.message or "—"),
-            ("Source", e.source),
-        ]
+        for k, v in fields
     )
     return (
         "<table role='presentation' width='100%' cellpadding='0' cellspacing='0'>"
@@ -303,6 +324,10 @@ async def create_enquiry(input: EnquiryIn, request: Request):
     if not _rate_ok(ip):
         raise HTTPException(status_code=429, detail="Too many requests. Please try again in a few minutes.")
 
+    # Consultation requests require the contact-consent checkbox.
+    if input.source == "consultation" and not input.consent:
+        raise HTTPException(status_code=422, detail="Consent is required so we can contact you about your request.")
+
     # Honeypot: bots filling hidden fields get a fake success and are not stored.
     if (input.company or "").strip():
         return {"success": True, "reference": "CMH-OK", "notified": False}
@@ -313,6 +338,10 @@ async def create_enquiry(input: EnquiryIn, request: Request):
         city=input.city,
         service=input.service,
         message=input.message,
+        email=input.email,
+        contact_method=input.contact_method,
+        contact_time=input.contact_time,
+        consent=input.consent,
         source=input.source,
     )
     await db.enquiries.insert_one(enquiry.to_mongo())
@@ -338,10 +367,11 @@ async def list_enquiries(request: Request, limit: int = 100):
         if e:
             out.append({
                 "id": e.id, "reference": e.reference, "name": e.name, "phone": e.phone,
-                "city": e.city, "service": e.service, "message": e.message,
-                "source": e.source, "status": e.status, "created_at": e.created_at,
+                "email": e.email, "city": e.city, "service": e.service, "message": e.message,
+                "contact_method": e.contact_method, "contact_time": e.contact_time,
+                "consent": e.consent, "source": e.source, "status": e.status, "created_at": e.created_at,
             })
-    return {"count": len(out), "enquiries": out}
+    return {"count": len(out), "email_configured": bool(ENQUIRY_EMAIL), "enquiries": out}
 
 app = FastAPI(title="Court Marriage Help API")
 app.include_router(api_router)

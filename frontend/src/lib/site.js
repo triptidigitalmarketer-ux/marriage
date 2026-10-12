@@ -28,6 +28,7 @@ export const SERVICE_OPTIONS = [
 
 export const NAV = {
     services: [
+        { label: "Same Day Court Marriage Assistance", to: "/same-day-court-marriage" },
         { label: "Marriage Registration in Delhi", to: "/marriage-registration-delhi" },
         { label: "Court Marriage Process in Delhi", to: "/court-marriage-process-delhi" },
         { label: "Documents Required", to: "/court-marriage-documents" },

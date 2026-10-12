@@ -35,6 +35,11 @@ const ROUTES = [
     "/blog/why-marriage-certificate-matters",
     "/blog/same-day-court-marriage-promises",
     "/blog/nri-foreign-national-court-marriage",
+    "/same-day-court-marriage",
+    "/same-day-court-marriage-delhi",
+    "/same-day-court-marriage-noida",
+    "/same-day-court-marriage-ghaziabad",
+    "/same-day-court-marriage-greater-noida",
 ];
 
 try {

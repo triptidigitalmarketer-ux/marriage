@@ -192,6 +192,7 @@ export const SERVICES = {
             { q: "Are there hidden charges later?", a: "Our engagement is a fixed written quote. If your case's facts change materially — for example a foreign-national partner or an objection under Section 7 — we tell you before any additional work happens." },
         ],
         related: [
+            { label: "Same Day Court Marriage Assistance", to: "/same-day-court-marriage" },
             { label: "Court Marriage Process in Delhi", to: "/court-marriage-process-delhi" },
             { label: "Documents Required", to: "/court-marriage-documents" },
             { label: "Same-Day & Urgent Guidance", to: "/online-court-marriage-application-delhi" },

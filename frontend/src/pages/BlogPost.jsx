@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Reveal from "@/components/Reveal";
 import CallbackForm from "@/components/CallbackForm";
 import { Blocks } from "@/components/InfoPage";
-import { POSTS } from "@/data/posts";
+import { POSTS, IMAGES } from "@/data/posts";
 import { SITE } from "@/lib/site";
 import NotFound from "@/pages/NotFound";
 
@@ -54,6 +54,17 @@ export default function BlogPost() {
                 <div className="grid gap-12 lg:grid-cols-12">
                     <Reveal className="lg:col-span-8">
                         <article data-testid={`blog-article-${post.slug}`}>
+                            {IMAGES[post.slug] && (
+                                <div className="relative mb-8">
+                                    <div className="absolute -inset-2 rounded-md border border-[var(--line)]" aria-hidden="true" />
+                                    <img
+                                        src={IMAGES[post.slug].src}
+                                        alt={IMAGES[post.slug].alt}
+                                        className="relative aspect-[16/9] w-full rounded-md object-cover"
+                                        data-testid={`blog-image-${post.slug}`}
+                                    />
+                                </div>
+                            )}
                             <Blocks blocks={post.blocks} />
 
                             <div className="mt-10">

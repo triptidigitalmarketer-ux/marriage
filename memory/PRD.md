@@ -25,7 +25,10 @@ Build a professional, trustworthy, SEO-friendly court marriage and marriage regi
 - ✅ Trust: honest do/don't positioning, no fake reviews/ratings/addresses, disclaimers
 - ✅ Analytics wiring: GA4 + consent banner; GSC spot marked in index.html
 - ✅ Blog (added 2026-10-12): /blog index + 6 posts (30-day notice, court marriage vs registration, certificate-delay mistakes, why the certificate matters, false same-day promises, NRI/foreign-national cases) — unique titles/descriptions, BlogPosting JSON-LD, internal links, homepage teaser, in sitemap (28 routes)
-- ✅ Domain wired (2026-10-12): courtmarriagehelp.in — REACT_APP_SITE_URL set; static canonical + og:url in head; per-route canonicals active; sitemap.xml (28 URLs) + robots.txt Sitemap line serve correctly; JSON-LD url set
+- ✅ Domain wired (2026-10-12): courtmarriagehelp.in — REACT_APP_SITE_URL set; static canonical + og:url in head; per-route canonicals active; sitemap.xml (33 URLs) + robots.txt Sitemap line serve correctly; JSON-LD url set
+- ✅ Blog images (2026-10-12): each post has a featured hero image in a clipped frame with descriptive alt text
+- ✅ Same-day court marriage pages (2026-10-12): /same-day-court-marriage (main, with full consultation form section) + /same-day-court-marriage-delhi, -noida, -ghaziabad, -greater-noida (consultation form in sidebar); existing /court-marriage-faridabad and /court-marriage-gurugram pages gained "Urgent or same-day assistance" sections + links instead of duplicates; Services dropdown/footer/mobile menu list the main page; fees page cross-links it
+- ✅ Consultation form (2026-10-12): full name, mobile, optional email (validated), preferred location, service, preferred contact method, preferred contact time, brief requirement, required consent checkbox, honeypot, rate limit; stored via POST /api/enquiries (source=consultation, consent enforced server-side 422); success panel shows reference; admin API returns email_configured flag so the owner can see email delivery needs ENQUIRY_EMAIL
 
 ## Backlog
 - P0: replace phone/WhatsApp placeholder (site.js — user chose to keep placeholder for now); set ENQUIRY_EMAIL (user skipped); GA4 ID (user skipped). ✅ Domain confirmed: courtmarriagehelp.in — REACT_APP_SITE_URL set, canonicals/og:url/JSON-LD url + sitemap.xml (21 routes) + robots Sitemap line live.

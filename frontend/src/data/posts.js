@@ -1,3 +1,30 @@
+export const IMAGES = {
+    "special-marriage-act-30-day-notice-explained": {
+        src: "https://images.unsplash.com/photo-1753802025168-e55ca6e8e1c6?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
+        alt: "Neoclassical government building with a long colonnade of columns",
+    },
+    "court-marriage-vs-marriage-registration": {
+        src: "https://images.unsplash.com/photo-1562564055-71e051d33c19?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
+        alt: "People signing and reviewing official documents together at a table",
+    },
+    "marriage-registration-mistakes-delhi-ncr": {
+        src: "https://images.unsplash.com/photo-1603796846097-bee99e4a601f?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
+        alt: "Person in an orange shirt carefully filling out paperwork",
+    },
+    "why-marriage-certificate-matters": {
+        src: "https://images.unsplash.com/photo-1630526720753-aa4e71acf67d?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
+        alt: "Newly married Indian couple in traditional wedding attire standing together",
+    },
+    "same-day-court-marriage-promises": {
+        src: "https://images.unsplash.com/photo-1570414036784-f96df71770cb?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
+        alt: "Legal documents with a stamp and magnifying glass under review",
+    },
+    "nri-foreign-national-court-marriage": {
+        src: "https://images.unsplash.com/photo-1735052712464-9d24b69be5f5?crop=entropy&cs=srgb&fm=jpg&q=80&w=1600",
+        alt: "Bride and groom in traditional Indian wedding attire walking together on a path",
+    },
+};
+
 export const POSTS = [
     {
         slug: "special-marriage-act-30-day-notice-explained",

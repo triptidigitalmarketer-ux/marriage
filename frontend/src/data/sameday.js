@@ -1,0 +1,271 @@
+export const SAMEDAY = {
+    main: {
+        slug: "same-day-court-marriage",
+        metaTitle: "Same Day Court Marriage Assistance in Delhi NCR — What's Possible",
+        metaDesc:
+            "Honest same day court marriage assistance in Delhi NCR — urgent consultation, documents and appointments today, registration of existing marriages expedited, and the 30-day notice explained.",
+        h1: "Same Day Court Marriage Assistance in Delhi NCR",
+        kicker: "Urgent help, honest timelines",
+        intro:
+            "If you need to move fast — a visa date, a safety situation, a family deadline — here is exactly what can be done today, what follows the statutory clock, and what no one can honestly promise. Court Marriage Help provides urgent consultation, same-day document preparation and expedited filing support across Delhi NCR.",
+        consultationSection: true,
+        formVariant: "consultation",
+        glance: [
+            { k: "Available today", v: "Consultation, route assessment, document preparation and appointment booking" },
+            { k: "New civil marriage (SMA)", v: "30-day statutory notice applies — it cannot be skipped anywhere in India" },
+            { k: "Existing marriage registration", v: "No 30-day notice — with a complete file, offices can move quickly" },
+            { k: "First step", v: "Free teleconsultation — call or request a consultation below" },
+        ],
+        blocks: [
+            { t: "h2", text: "First, the honest position on 'same day'" },
+            { t: "p", text: "There are two different procedures people mean by 'court marriage' — and only one of them has any same-day dimension at all. A new civil marriage under the Special Marriage Act, 1954 requires a 30-day statutory notice before solemnization; that notice is law, it applies to every couple in every office in India, and no consultant, agent or payment can waive it. Anyone promising a guaranteed same-day civil marriage is misrepresenting the process." },
+            { t: "p", text: "What urgency genuinely affects is the second procedure: registration of a marriage that has already been solemnized. That route has no 30-day notice — its speed depends on a complete, correctly formatted file and the office's verification and appointment schedule. That is where preparation buys real time." },
+            { t: "h2", text: "What we can genuinely do on an urgent timeline" },
+            { t: "list", items: [
+                "Same-day consultation and route assessment — which law applies to you, and what your realistic timeline is.",
+                "Same-day preparation of affidavits, annexures and the complete document set to your office's current format.",
+                "Expedited filing of a registration application for an existing marriage on the official portal (e-District Delhi, IGRS UP, e-Services Haryana).",
+                "Priority appointment support — where the office offers priority slots, we book the earliest available and make sure nothing is missing on the day.",
+                "Guidance through the Special Marriage Act notice when solemnization is the route — filed correctly the first time so the 30 days start counting immediately.",
+            ] },
+            { t: "h2", text: "The two routes at a glance" },
+            { t: "table", head: ["", "Registering an existing marriage", "New civil marriage (SMA)"], rows: [
+                ["Who it is for", "Ceremony already performed", "Marrying now, any religion"],
+                ["Statutory notice", "None — verification instead", "30 days, mandatory"],
+                ["Can it be same-day?", "Possibly fast with a complete file and priority appointment — never guaranteed", "No — notice period is law"],
+                ["Where", "SDM via the state portal", "Marriage Officer / SDM of your district"],
+                ["Witnesses", "As per state rules", "Three witnesses"],
+            ] },
+            { t: "h2", text: "Eligibility, briefly" },
+            { t: "list", items: [
+                "Age: 21 for the male partner and 18 for the female partner.",
+                "Neither partner has a living spouse at the time of marriage.",
+                "Partners are not within the degrees of prohibited relationship (unless a governing custom permits it).",
+                "For the SMA route, one partner must have resided in the filing district for at least 30 days before the notice.",
+                "For registration, evidence of the ceremony — photographs, nikah nama or priest certificate — plus age and address proofs.",
+            ] },
+            { t: "h2", text: "Documents to keep ready for an urgent case" },
+            { t: "list", items: [
+                "Age and address proofs for both partners — Aadhaar, passport, matriculation certificate or similar.",
+                "Passport-size photographs of both partners.",
+                "Marriage evidence, if the ceremony is already done.",
+                "Witness ID proofs — three witnesses for SMA solemnization; per state rules for registration.",
+                "Divorce decree or former spouse's death certificate, if applicable.",
+            ] },
+            { t: "p", text: "The full checklists, route by route, are on our Court Marriage Documents page — urgent or not, the formats must match your office exactly, and that preparation is included in our assistance." },
+            { t: "h2", text: "How urgent assistance runs, step by step" },
+            { t: "steps", items: [
+                { h: "1 · Call or request a consultation", d: "A short call settles your route, eligibility and honest timeline — the first consultation is free." },
+                { h: "2 · Fixed written quote", d: "One professional fee, quoted before any work begins. Government fees are shown on the official portal and paid by you, in your own name." },
+                { h: "3 · Same-day preparation", d: "Affidavits, annexures and the complete file are prepared to your office's format — usually the same day." },
+                { h: "4 · Filing and appointments", d: "Registration applications are filed on the official portal with the earliest available appointment; SMA notices are filed so the 30-day window starts immediately." },
+                { h: "5 · Verification or solemnization", d: "You attend with originals and witnesses; the certificate follows verification, or the marriage is solemnized after the notice period." },
+            ] },
+            { t: "note", text: "We do not guarantee same-day marriages, instant certificates or government approval — no one honestly can. Timelines depend on statutory requirements and office schedules. This page is general information, not legal advice; consult a qualified advocate for your specific circumstances." },
+        ],
+        faqs: [
+            { q: "Can a court marriage be completed in one day in Delhi?", a: "No — a new civil marriage under the Special Marriage Act requires a 30-day statutory notice before solemnization, in every office in India. What can be fast is registration of a marriage already performed: with a complete file and a priority appointment (where offered), it can conclude quickly — but no one can guarantee government timelines." },
+            { q: "What is the fastest honest route to a certificate?", a: "If your ceremony is already done, registration of the existing marriage — with every document correctly formatted and a priority appointment where the office offers one. If you are marrying now, the 30-day notice under the Special Marriage Act is unavoidable; file it correctly and immediately so the window starts counting." },
+            { q: "What does your urgent assistance include?", a: "Same-day consultation and route assessment, same-day preparation of affidavits and documents, expedited filing on official portals, priority appointment booking and support on the day. Government fees are separate and paid by you on the official portal." },
+            { q: "Do you charge extra for urgency?", a: "You get one fixed written quote before work begins — no surprise 'urgent fees'. If your case's facts change materially, we tell you before any additional work happens." },
+            { q: "Is the 30-day notice different in Noida or Ghaziabad?", a: "No — the Special Marriage Act is central law, so the 30-day notice and three witnesses apply identically in Delhi, Noida, Ghaziabad, Greater Noida, Gurugram and Faridabad. What differs by state are the registration rules, portals and office formats." },
+        ],
+        related: [
+            { label: "Court Marriage Process in Delhi", to: "/court-marriage-process-delhi" },
+            { label: "Documents Required", to: "/court-marriage-documents" },
+            { label: "Fees & Charges in Delhi", to: "/court-marriage-fees-delhi" },
+            { label: "Same Day Assistance in Delhi", to: "/same-day-court-marriage-delhi" },
+        ],
+    },
+
+    delhi: {
+        slug: "same-day-court-marriage-delhi",
+        metaTitle: "Same Day Court Marriage Assistance in Delhi — Urgent Help",
+        metaDesc:
+            "Urgent court marriage assistance in Delhi — same-day consultation and documents, expedited registration of existing marriages via e-District, and the 30-day Special Marriage Act notice explained honestly.",
+        h1: "Same Day Court Marriage Assistance in Delhi",
+        kicker: "Delhi · Urgent assistance, honest timelines",
+        intro:
+            "Need to move fast in Delhi? Here is what urgency can genuinely buy you at Delhi's SDM offices — same-day consultation and documents, expedited registration of a marriage already performed through the e-District portal — and what the law fixes in place: the 30-day notice for any new civil marriage under the Special Marriage Act.",
+        formVariant: "consultation",
+        glance: [
+            { k: "Where you'll file", v: "SDM (Marriage Officer) of your district; registration via the e-District Delhi portal" },
+            { k: "Registration route", v: "No 30-day notice — speed depends on a complete file and appointments" },
+            { k: "New civil marriage", v: "30-day statutory notice under the SMA — cannot be skipped" },
+            { k: "First step", v: "Free teleconsultation today" },
+        ],
+        blocks: [
+            { t: "h2", text: "What 'same day' honestly means in Delhi" },
+            { t: "p", text: "Delhi's SDM offices handle both routes: solemnization of new civil marriages under the Special Marriage Act, and registration of marriages already performed. For a new civil marriage, the 30-day notice is statutory — every office, every district, no exceptions. What Delhi couples can genuinely get on an urgent timeline is the registration route: a correctly prepared e-District application with priority appointment support, where the office offers priority slots." },
+            { t: "h2", text: "What we can do for you today" },
+            { t: "list", items: [
+                "Consult you today and fix your route — solemnization or registration.",
+                "Prepare your complete document set to your district SDM's format, usually the same day.",
+                "File the e-District registration application with the earliest available appointment.",
+                "If your route is the SMA, file the notice correctly so the 30-day window starts counting immediately.",
+            ] },
+            { t: "h2", text: "Registering an existing marriage quickly in Delhi" },
+            { t: "p", text: "Delhi's e-District portal lets couples apply for registration of an existing marriage online — documents uploaded, appointment booked at the SDM office, one in-person verification with originals, and the certificate after verification. The file's completeness is what determines speed: name spellings matched, affidavits in the prescribed format, witnesses' IDs ready. That preparation is exactly what our assistance covers." },
+            { t: "h2", text: "If your situation is urgent for other reasons" },
+            { t: "p", text: "Visa dates, job relocations and family circumstances are common reasons couples need speed. Where safety — not just scheduling — is the concern, tell us on the call; we will explain the legal position plainly and refer you to a qualified advocate and the appropriate protection mechanisms for your specific situation." },
+            { t: "note", text: "No guaranteed same-day marriages or certificates — the 30-day notice under the Special Marriage Act is law, and verification timelines belong to the office. General information, not legal advice." },
+        ],
+        faqs: [
+            { q: "Can I get a court marriage done in one day in Delhi?", a: "A new civil marriage cannot — the 30-day notice under the Special Marriage Act applies in every Delhi district. Registration of a marriage already performed can move quickly where the office offers priority appointments and your file is complete, but timelines cannot be guaranteed." },
+            { q: "How fast can registration of an existing marriage move in Delhi?", a: "Once the e-District application and documents are complete and correctly formatted, speed depends on appointment availability and verification at your district's SDM office. We prepare the file so nothing stalls on paperwork." },
+            { q: "Which district's SDM do we file in?", a: "The district where either partner has resided for at least 30 days before the notice (for the SMA route); registration applications are made to the SDM concerned under the applicable rules. We confirm your correct district in the consultation." },
+            { q: "What documents should I keep ready today?", a: "Age and address proofs for both partners, photographs, marriage evidence if the ceremony is done, and witness ID proofs. The route-specific checklist is on our Documents page." },
+        ],
+        related: [
+            { label: "Same Day Court Marriage Assistance (main guide)", to: "/same-day-court-marriage" },
+            { label: "Court Marriage in Delhi", to: "/court-marriage-delhi" },
+            { label: "Online Application Assistance", to: "/online-court-marriage-application-delhi" },
+            { label: "Marriage Registration in Delhi", to: "/marriage-registration-delhi" },
+        ],
+    },
+
+    noida: {
+        slug: "same-day-court-marriage-noida",
+        metaTitle: "Same Day Court Marriage Assistance in Noida — Urgent Help",
+        metaDesc:
+            "Urgent court marriage assistance in Noida — same-day consultation and documents, expedited registration of existing marriages via IGRS UP (Gautam Buddha Nagar), and the 30-day notice explained honestly.",
+        h1: "Same Day Court Marriage Assistance in Noida",
+        kicker: "Noida · Gautam Buddha Nagar, Uttar Pradesh",
+        intro:
+            "For Noida couples, urgency works differently depending on the route: registration of a marriage already performed runs through Gautam Buddha Nagar district's process on IGRS UP and can move quickly with a complete file — while any new civil marriage under the Special Marriage Act carries the same 30-day statutory notice as everywhere in India. Here is the honest picture, and what we can start today.",
+        formVariant: "consultation",
+        glance: [
+            { k: "Where you'll file", v: "Marriage Officer / SDM for Gautam Buddha Nagar district (UP)" },
+            { k: "Registration route", v: "IGRS UP portal — no 30-day notice; speed depends on the file" },
+            { k: "New civil marriage", v: "30-day statutory notice under the SMA — cannot be skipped" },
+            { k: "First step", v: "Free teleconsultation today" },
+        ],
+        blocks: [
+            { t: "h2", text: "What urgency can and cannot do in Noida" },
+            { t: "p", text: "Uttar Pradesh handles registration of existing marriages through the IGRS UP portal — application, document upload and verification at the concerned office. There is no 30-day notice on this route, so with every document correctly prepared to UP's formats, the file can move as fast as the office's schedule allows. A new civil marriage under the Special Marriage Act is different: the 30-day notice is statutory and identical across UP, Delhi and Haryana." },
+            { t: "h2", text: "What we can do for you today" },
+            { t: "list", items: [
+                "Consult you today — route, eligibility and an honest timeline for your case.",
+                "Prepare your complete document set to UP's prescribed formats, usually the same day.",
+                "Guide the IGRS UP registration application end to end, with you as the applicant.",
+                "If solemnization is your route, file the SMA notice so the 30-day window starts immediately.",
+            ] },
+            { t: "h2", text: "UP-specific points urgent cases should know" },
+            { t: "list", items: [
+                "Affidavit and annexure formats follow UP's registration rules — downloaded templates cause rejections.",
+                "Witness details and IDs are part of the application; brief them early.",
+                "Greater Noida falls in the same district (Gautam Buddha Nagar) — your tehsil decides the exact office.",
+            ] },
+            { t: "note", text: "Beware anyone promising a guaranteed same-day court marriage in Noida — the 30-day notice under the Special Marriage Act is law. General information, not legal advice." },
+        ],
+        faqs: [
+            { q: "Can a court marriage be completed in one day in Noida?", a: "A new civil marriage cannot — the 30-day statutory notice applies. Registration of a marriage already performed has no such notice and can proceed quickly once the IGRS UP application and documents are complete, subject to the office's verification schedule." },
+            { q: "We had an Arya Samaj ceremony — how fast can we get the certificate?", a: "Registration of the existing marriage under the applicable UP rules is the route. With marriage evidence, age and address proofs, affidavits and witnesses prepared correctly, the file moves as quickly as the office allows." },
+            { q: "Is the process faster than Delhi's?", a: "The governing law is the same; the portals and formats differ (IGRS UP vs e-District Delhi). Speed comes from a complete, correctly formatted file — which is what our preparation provides." },
+            { q: "What should we keep ready for the first call?", a: "Age and address proofs for both partners, marriage evidence, photographs and witness ID details — and a clear idea of your deadline, so we can tell you honestly what is achievable." },
+        ],
+        related: [
+            { label: "Same Day Court Marriage Assistance (main guide)", to: "/same-day-court-marriage" },
+            { label: "Court Marriage in Noida", to: "/court-marriage-noida" },
+            { label: "Documents Required", to: "/court-marriage-documents" },
+            { label: "Interfaith Court Marriage", to: "/interfaith-court-marriage" },
+        ],
+    },
+
+    ghaziabad: {
+        slug: "same-day-court-marriage-ghaziabad",
+        metaTitle: "Same Day Court Marriage Assistance in Ghaziabad — Urgent Help",
+        metaDesc:
+            "Urgent court marriage assistance in Ghaziabad — same-day consultation and document preparation, expedited registration of existing marriages via IGRS UP, and the 30-day Special Marriage Act notice explained.",
+        h1: "Same Day Court Marriage Assistance in Ghaziabad",
+        kicker: "Ghaziabad · Uttar Pradesh",
+        intro:
+            "Ghaziabad couples needing speed should know two things on day one: registration of a marriage already performed — under UP's rules through the IGRS UP portal — has no 30-day notice and moves at the speed of a complete file; and a new civil marriage under the Special Marriage Act carries the same 30-day statutory notice as every other district in India. We provide the urgent half: same-day consultation, documents and filing.",
+        formVariant: "consultation",
+        glance: [
+            { k: "Where you'll file", v: "Marriage Officer / SDM for Ghaziabad district (UP)" },
+            { k: "Registration route", v: "IGRS UP portal — no 30-day notice" },
+            { k: "New civil marriage", v: "30-day statutory notice under the SMA — cannot be skipped" },
+            { k: "First step", v: "Free teleconsultation today" },
+        ],
+        blocks: [
+            { t: "h2", text: "The honest position on urgency in Ghaziabad" },
+            { t: "p", text: "No office in Uttar Pradesh can solemnize a new civil marriage on the same day — the Special Marriage Act's 30-day notice is statutory. What urgent assistance genuinely covers is everything around the statutory clock: same-day route assessment, same-day preparation of affidavits and documents to UP's formats, immediate filing of the notice or registration application, and priority appointment support where the office offers it." },
+            { t: "h2", text: "What we can do for you today" },
+            { t: "list", items: [
+                "Consult you today and confirm your route and correct filing office for your Ghaziabad address.",
+                "Prepare the complete document set — affidavits, annexures, photocopies — to UP's current formats.",
+                "File the registration application on IGRS UP with the earliest available appointment.",
+                "If you are marrying now, file the SMA notice immediately so the 30 days start counting.",
+            ] },
+            { t: "h2", text: "Ghaziabad-specific points for urgent cases" },
+            { t: "list", items: [
+                "Your tehsil within Ghaziabad district decides the exact SDM office — confirm it before travelling.",
+                "Name spellings across Aadhaar, matriculation certificates and the nikah nama are a common delay — resolve them in the file first.",
+                "Witnesses must attend with valid IDs; brief them as soon as the appointment is fixed.",
+            ] },
+            { t: "note", text: "No guaranteed same-day marriages or certificates — statutory notice and verification timelines apply. General information, not legal advice; consult a qualified advocate for case-specific matters." },
+        ],
+        faqs: [
+            { q: "Can a court marriage be completed in one day in Ghaziabad?", a: "A new civil marriage cannot — the 30-day statutory notice under the Special Marriage Act applies. Registration of an existing marriage has no such notice; with a complete IGRS UP file and an available appointment it can move quickly, subject to the office's schedule." },
+            { q: "We had a nikah in Ghaziabad — what is the fastest route to the certificate?", a: "Registration of the existing marriage under the applicable UP rules, using the nikah nama and marriage evidence with age and address proofs, affidavits and witnesses. We prepare the complete file and guide the application." },
+            { q: "Our visa interview is in three weeks — is that enough time?", a: "Tell us your exact deadline on the call. If your documents are straightforward, registration can often fit that window; if complications exist, we will tell you honestly rather than promise." },
+            { q: "Do you charge more for urgent assistance?", a: "No — one fixed written quote before work begins, covering consultation, preparation, filing and appointment support. Government fees are paid by you on the official portal." },
+        ],
+        related: [
+            { label: "Same Day Court Marriage Assistance (main guide)", to: "/same-day-court-marriage" },
+            { label: "Court Marriage in Ghaziabad", to: "/court-marriage-ghaziabad" },
+            { label: "Documents Required", to: "/court-marriage-documents" },
+            { label: "Fees & Charges in Delhi", to: "/court-marriage-fees-delhi" },
+        ],
+    },
+
+    "greater-noida": {
+        slug: "same-day-court-marriage-greater-noida",
+        metaTitle: "Same Day Court Marriage Assistance in Greater Noida — Urgent Help",
+        metaDesc:
+            "Urgent court marriage assistance in Greater Noida — same-day consultation and documents, expedited registration of existing marriages in Gautam Buddha Nagar district via IGRS UP, with the 30-day notice explained.",
+        h1: "Same Day Court Marriage Assistance in Greater Noida",
+        kicker: "Greater Noida · Gautam Buddha Nagar, Uttar Pradesh",
+        intro:
+            "Greater Noida couples in a hurry get the same legal reality as the rest of the NCR: registration of a marriage already performed can move quickly through Gautam Buddha Nagar district's IGRS UP process when the file is complete, while a new civil marriage under the Special Marriage Act carries the mandatory 30-day notice. Our urgent assistance covers everything that can legitimately be done today.",
+        formVariant: "consultation",
+        glance: [
+            { k: "Where you'll file", v: "Marriage Officer / SDM for Gautam Buddha Nagar district — your local tehsil" },
+            { k: "Registration route", v: "IGRS UP portal — no 30-day notice" },
+            { k: "New civil marriage", v: "30-day statutory notice under the SMA — cannot be skipped" },
+            { k: "First step", v: "Free teleconsultation today" },
+        ],
+        blocks: [
+            { t: "h2", text: "What urgency means in Greater Noida" },
+            { t: "p", text: "Greater Noida sits within Gautam Buddha Nagar district, so urgent cases follow the same Uttar Pradesh process as Noida: registration of existing marriages on the IGRS UP portal, and SMA solemnization with its statutory 30-day notice. The practical difference is only your tehsil office — which we confirm during the consultation so no visit is wasted." },
+            { t: "h2", text: "What we can do for you today" },
+            { t: "list", items: [
+                "Consult you today — route, eligibility and honest timeline.",
+                "Prepare your complete document set to UP's formats, usually the same day.",
+                "File the IGRS UP registration application with the earliest available appointment.",
+                "File the SMA notice immediately if solemnization is your route, so the 30-day window starts counting.",
+            ] },
+            { t: "h2", text: "Planning an urgent timeline sensibly" },
+            { t: "list", items: [
+                "Fix the filing district first — one partner's 30-day residence matters for the SMA route.",
+                "Collect marriage evidence (photographs, nikah nama or priest certificate) before applying, not after a query.",
+                "Line up witnesses with IDs as soon as an appointment is on the horizon.",
+                "Verify every fee on the official portal — never pay 'government fees' in cash to anyone.",
+            ] },
+            { t: "note", text: "No guaranteed same-day marriages or certificates — the statutory notice and office verification apply. General information, not legal advice." },
+        ],
+        faqs: [
+            { q: "Can a court marriage be completed in one day in Greater Noida?", a: "A new civil marriage cannot — the 30-day statutory notice applies everywhere in India. Registration of an existing marriage has no such notice; with a complete file and an available appointment it can move quickly, subject to verification." },
+            { q: "Is the Greater Noida office different from Noida's?", a: "Both are in Gautam Buddha Nagar district — your tehsil decides the exact SDM office. We confirm the correct one for your address during the consultation." },
+            { q: "We are an interfaith couple needing to marry urgently — options?", a: "The Special Marriage Act is the route, with its 30-day notice. File the notice correctly and immediately; the window starts counting from filing. For safety concerns alongside urgency, consult a qualified advocate about your specific situation." },
+            { q: "What documents should we assemble today?", a: "Age and address proofs, photographs, marriage evidence if the ceremony is done, and witness ID details — the full route-specific checklist is on our Documents page." },
+        ],
+        related: [
+            { label: "Same Day Court Marriage Assistance (main guide)", to: "/same-day-court-marriage" },
+            { label: "Court Marriage in Greater Noida", to: "/court-marriage-greater-noida" },
+            { label: "Documents Required", to: "/court-marriage-documents" },
+            { label: "Special Marriage Act, 1954", to: "/special-marriage-act" },
+        ],
+    },
+};

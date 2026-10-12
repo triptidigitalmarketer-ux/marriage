@@ -22,6 +22,7 @@ import Disclaimer from "@/pages/Disclaimer";
 import LocationPage from "@/pages/LocationPage";
 import ServicePage from "@/pages/ServicePage";
 import NotFound from "@/pages/NotFound";
+import SameDayPage from "@/pages/SameDayPage";
 
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -106,6 +107,12 @@ function App() {
                             <Route path="/contact-us" element={<Contact />} />
                             <Route path="/blog" element={<Blog />} />
                             <Route path="/blog/:slug" element={<BlogPost />} />
+
+                            <Route path="/same-day-court-marriage" element={<SameDayPage slug="main" />} />
+                            <Route path="/same-day-court-marriage-delhi" element={<SameDayPage slug="delhi" />} />
+                            <Route path="/same-day-court-marriage-noida" element={<SameDayPage slug="noida" />} />
+                            <Route path="/same-day-court-marriage-ghaziabad" element={<SameDayPage slug="ghaziabad" />} />
+                            <Route path="/same-day-court-marriage-greater-noida" element={<SameDayPage slug="greater-noida" />} />
                             <Route path="/faq" element={<Faq />} />
                             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                             <Route path="/terms-and-conditions" element={<Terms />} />

@@ -239,6 +239,11 @@ export const LOCATIONS = {
                 "Appointment coordination and day-of guidance.",
             ] },
             { t: "note", text: "We never publish unverified government fees — the current statutory charge appears on the official portal when you apply. Our professional charges are quoted separately, before you commit." },
+            { t: "h2", text: "Urgent or same-day assistance in Gurugram" },
+            { t: "p", text: "On a deadline? The honest position for Gurugram couples: registration of a marriage already performed has no 30-day notice and can move quickly through Haryana's e-Services (SARAL) process with a complete file — while a new civil marriage under the Special Marriage Act always involves the statutory 30-day notice. Our urgent assistance covers same-day consultation, same-day document preparation to Haryana's formats, and priority appointment support where the office offers it." },
+            { t: "links", items: [
+                { label: "Same Day Court Marriage Assistance — what is possible", to: "/same-day-court-marriage" },
+            ] },
         ],
         faqs: [
             { q: "Where do we file for court marriage in Gurugram?", a: "With the Marriage Officer for Gurugram district, Haryana — the SDM concerned with your address. One partner must have resided in the district for at least 30 days before the notice." },
@@ -290,6 +295,11 @@ export const LOCATIONS = {
                 "Clear answers during the notice period, without exaggerated promises.",
             ] },
             { t: "note", text: "Court Marriage Help is an independent consultancy, not a government body. Official applications are always filed on government portals and offices in your own name." },
+            { t: "h2", text: "Urgent or same-day assistance in Faridabad" },
+            { t: "p", text: "If you are on a deadline — a visa date or a family timeline — here is the honest position: registration of a marriage already performed carries no 30-day notice and can move quickly through the SARAL portal with a complete file, while a new civil marriage under the Special Marriage Act always involves the statutory 30-day notice. Our urgent assistance covers same-day consultation, same-day document preparation and priority appointment support where the office offers it." },
+            { t: "links", items: [
+                { label: "Same Day Court Marriage Assistance — what is possible", to: "/same-day-court-marriage" },
+            ] },
         ],
         faqs: [
             { q: "Which office handles court marriage in Faridabad?", a: "The Marriage Officer for Faridabad district, Haryana — in practice the SDM for your area. One partner must have resided in the district for at least 30 days before the notice is filed." },

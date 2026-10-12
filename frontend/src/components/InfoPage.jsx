@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Reveal from "@/components/Reveal";
 import FaqAccordion from "@/components/FaqAccordion";
 import CallbackForm from "@/components/CallbackForm";
+import ConsultationForm from "@/components/ConsultationForm";
 import { SITE } from "@/lib/site";
 
 export function Blocks({ blocks }) {
@@ -29,6 +30,18 @@ export function Blocks({ blocks }) {
                             <li key={j} className="flex gap-3 text-[15px] leading-relaxed text-ink/85">
                                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--amber)]" />
                                 {it}
+                            </li>
+                        ))}
+                    </ul>
+                );
+            case "links":
+                return (
+                    <ul key={i} className="mt-4 space-y-2">
+                        {b.items.map((l) => (
+                            <li key={l.to}>
+                                <Link to={l.to} className="link-ink text-sm" data-testid={`info-link-${l.to.replace(/\//g, "")}`}>
+                                    {l.label} <ArrowRight className="inline h-3.5 w-3.5" />
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -83,8 +96,10 @@ export function Blocks({ blocks }) {
 
 /**
  * Shared template for location + service SEO pages, driven by data files.
+ * formVariant: "callback" (default) or "consultation" (full consultation form in sidebar).
+ * data.consultationSection: renders a full consultation form section in the article column.
  */
-export default function InfoPage({ data, kind }) {
+export default function InfoPage({ data, kind, formVariant = "callback" }) {
     const path = "/" + data.slug;
     const absUrl = SITE_URL_CONFIGURED ? `${SITE_URL_CONFIGURED}${path}` : undefined;
     const jsonLd = {
@@ -149,6 +164,9 @@ export default function InfoPage({ data, kind }) {
                         >
                             <MessageCircle className="h-4 w-4" /> WhatsApp Us
                         </a>
+                        <Link to="/contact-us" className="btn btn-ghost-light" data-testid={`${data.slug}-book-consultation-button`}>
+                            Book a Consultation
+                        </Link>
                     </div>
 
                     <div className="mt-10 grid gap-px overflow-hidden rounded-md border border-white/15 bg-white/15 sm:grid-cols-2 lg:grid-cols-4" data-testid={`${data.slug}-glance-grid`}>
@@ -169,6 +187,19 @@ export default function InfoPage({ data, kind }) {
                         <article data-testid={`${data.slug}-content`}>
                             <Blocks blocks={data.blocks} />
 
+                            {data.consultationSection && (
+                                <div className="mt-12 rounded-md border border-[var(--line)] bg-[var(--card)] p-6 sm:p-8" data-testid={`${data.slug}-consultation-section`}>
+                                    <h2 className="text-xl font-black tracking-tight text-ink sm:text-2xl">Book your free consultation</h2>
+                                    <p className="mt-1.5 text-[13px] leading-relaxed text-[var(--muted)]">
+                                        Tell us your situation and preferred time — we will reach out
+                                        by phone, WhatsApp or online consultation, as you choose.
+                                    </p>
+                                    <div className="mt-5">
+                                        <ConsultationForm testidPrefix={`${data.slug}-consultation`} />
+                                    </div>
+                                </div>
+                            )}
+
                             <h2 className="mt-12 text-2xl font-bold tracking-tight text-ink sm:text-3xl">
                                 {kind === "location" ? `Questions people in ${data.city} ask` : "Frequently asked questions"}
                             </h2>
@@ -182,12 +213,18 @@ export default function InfoPage({ data, kind }) {
                         <div className="lg:sticky lg:top-28">
                             <Reveal delay={0.1}>
                                 <div className="card-file card-tab p-6" data-testid={`${data.slug}-callback-card`}>
-                                    <h3 className="text-lg font-bold text-ink">Request a callback</h3>
+                                    <h3 className="text-lg font-bold text-ink">
+                                        {formVariant === "consultation" ? "Book a consultation" : "Request a callback"}
+                                    </h3>
                                     <p className="mt-1 text-[13px] leading-relaxed text-[var(--muted)]">
                                         Free first consultation — route, documents and realistic timeline for {data.city || "your case"}.
                                     </p>
                                     <div className="mt-4">
-                                        <CallbackForm testidPrefix={`${data.slug}-callback`} />
+                                        {formVariant === "consultation" ? (
+                                            <ConsultationForm compact testidPrefix={`${data.slug}-side-consultation`} />
+                                        ) : (
+                                            <CallbackForm testidPrefix={`${data.slug}-callback`} />
+                                        )}
                                     </div>
                                     <p className="mt-4 border-t border-[var(--line)] pt-3 text-[11px] leading-relaxed text-[var(--muted)]">
                                         Prefer to talk now? Call or WhatsApp — same number.
